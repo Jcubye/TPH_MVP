@@ -10,30 +10,19 @@ using System.Windows.Forms;
 
 namespace Capa_GUI
 {
-    public partial class PantallaRegistroPaciente : Form
+    public partial class PantallaRegistroMedico : Form
     {
-        public PantallaRegistroPaciente()
+        public PantallaRegistroMedico()
         {
             InitializeComponent();
         }
 
-        private void textBox5_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button8_Click(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
 
         private void button5_Click(object sender, EventArgs e)
-        {
-            this.Dispose();
-            System.GC.Collect();
-        }
-
-        private void button6_Click(object sender, EventArgs e)
         {
             this.Dispose();
             System.GC.Collect();

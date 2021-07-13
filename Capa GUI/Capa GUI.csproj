@@ -70,6 +70,24 @@
     <Compile Include="PantallaLoginTutor.Designer.cs">
       <DependentUpon>PantallaLoginTutor.cs</DependentUpon>
     </Compile>
+    <Compile Include="PantallaRegistroAtencion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaRegistroAtencion.Designer.cs">
+      <DependentUpon>PantallaRegistroAtencion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PantallaRegistroDepartamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaRegistroDepartamento.Designer.cs">
+      <DependentUpon>PantallaRegistroDepartamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PantallaRegistroMedico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaRegistroMedico.Designer.cs">
+      <DependentUpon>PantallaRegistroMedico.cs</DependentUpon>
+    </Compile>
     <Compile Include="PantallaRegistroPaciente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +125,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PantallaLoginTutor.resx">
       <DependentUpon>PantallaLoginTutor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaRegistroAtencion.resx">
+      <DependentUpon>PantallaRegistroAtencion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaRegistroDepartamento.resx">
+      <DependentUpon>PantallaRegistroDepartamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaRegistroMedico.resx">
+      <DependentUpon>PantallaRegistroMedico.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PantallaRegistroPaciente.resx">
       <DependentUpon>PantallaRegistroPaciente.cs</DependentUpon>

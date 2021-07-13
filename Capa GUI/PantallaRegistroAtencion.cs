@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Capa_GUI
 {
-    public partial class PantallaRegistroTutor : Form
+    public partial class PantallaRegistroAtencion : Form
     {
-        public PantallaRegistroTutor()
+        public PantallaRegistroAtencion()
         {
             InitializeComponent();
         }
@@ -21,16 +21,6 @@ namespace Capa_GUI
         {
             this.Dispose();
             System.GC.Collect();
-        }
-
-        private void txtRegistrar_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtApellido_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

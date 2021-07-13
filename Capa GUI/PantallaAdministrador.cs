@@ -22,5 +22,35 @@ namespace Capa_GUI
             this.Dispose();
             System.GC.Collect();
         }
+
+        private void registroPacienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PantallaRegistroPaciente pRegistroPaciente = new PantallaRegistroPaciente();
+            pRegistroPaciente.ShowDialog();
+        }
+
+        private void registroTutorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PantallaRegistroTutor pRegistroTutor = new PantallaRegistroTutor();
+            pRegistroTutor.ShowDialog();
+        }
+
+        private void registroMédicoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PantallaRegistroMedico pRegistroMedico = new PantallaRegistroMedico();
+            pRegistroMedico.ShowDialog();
+        }
+
+        private void registroAtenciónToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PantallaRegistroAtencion pRegistroAtencion = new PantallaRegistroAtencion();
+            pRegistroAtencion.ShowDialog();
+        }
+
+        private void registroDepartamentosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PantallaRegistroDepartamento pRegistroDepartamento = new PantallaRegistroDepartamento();
+            pRegistroDepartamento.ShowDialog();
+        }
     }
 }
