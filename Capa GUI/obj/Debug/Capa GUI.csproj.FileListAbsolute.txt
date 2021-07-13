@@ -1,0 +1,15 @@
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa GUI\obj\Debug\Capa GUI.csproj.AssemblyReference.cache
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa GUI\obj\Debug\Capa_GUI.PantallaAdministrador.resources
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa GUI\obj\Debug\Capa_GUI.PantallaHome.resources
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa GUI\obj\Debug\Capa_GUI.PantallaLoginMedico.resources
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa GUI\obj\Debug\Capa_GUI.PantallaLoginTutor.resources
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa GUI\obj\Debug\Capa_GUI.PantallaResumenMedico.resources
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa GUI\obj\Debug\Capa_GUI.PantallaResumenTutor.resources
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa GUI\obj\Debug\Capa_GUI.Properties.Resources.resources
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa GUI\obj\Debug\Capa GUI.csproj.GenerateResource.cache
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa GUI\obj\Debug\Capa GUI.csproj.CoreCompileInputs.cache
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa GUI\bin\Debug\Capa GUI.exe.config
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa GUI\bin\Debug\Capa GUI.exe
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa GUI\bin\Debug\Capa GUI.pdb
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa GUI\obj\Debug\Capa GUI.exe
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa GUI\obj\Debug\Capa GUI.pdb
