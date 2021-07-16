@@ -15,6 +15,36 @@ namespace Capa_GUI
         private int posicion;
         private int ultimo;
 
+        public int Posicion { get => posicion; set => posicion = value; }
+        public int Ultimo { get => ultimo; set => ultimo = value; }
+
+
+        //mostrar
+        public void mostrar()
+        {
+            ServiceTutor.WebServiceTutorSoapClient auxService = new ServiceTutor.WebServiceTutorSoapClient();
+            ServiceTutor.Tutor auxTutor = new ServiceTutor.Tutor();
+            this.Ultimo = auxService.consultarTutorService().Tables[0].Rows.Count - 1;
+
+
+
+
+            if (this.Posicion < 0)
+                this.Posicion = 0;
+            if (this.Posicion >= this.Ultimo)
+                this.Posicion = this.Ultimo;
+
+            auxTutor = auxService.posicionTutorService(this.Posicion);
+
+            this.txtRut.Text = auxTutor.Rut;
+            this.txtClave.Text = auxTutor.Clave;
+            this.txtNombre.Text = auxTutor.Nombre;
+            this.txtTelefono.Text = auxTutor.Telefono;
+            this.txtCorreo.Text = auxTutor.Correo;
+
+            this.txtPosicion.Text = (this.Posicion + 1) + "-" + (this.Ultimo + 1);
+        }
+
         public void limpiar()
         {
             this.txtRut.Text = "";
@@ -165,6 +195,19 @@ namespace Capa_GUI
         {
             PantallaListarTutor pListarTutor = new PantallaListarTutor();
             pListarTutor.ShowDialog();
+        }
+
+        private void btnPrimero_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PantallaRegistroTutor_Load(object sender, EventArgs e)
+        {
+            this.Posicion = 0;
+            this.mostrar();
+            this.deshabilitar();
+            this.txtPosicion.Enabled = false;
         }
     }
 }

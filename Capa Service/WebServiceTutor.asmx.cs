@@ -57,6 +57,13 @@ namespace Capa_Service
             auxNegocio.buscaTutor(rut);
         }
 
+        [WebMethod]
+        public Tutor posicionTutorService(int fila)
+        {
+            NegocioTutor auxNegocio = new NegocioTutor();
+            return auxNegocio.posicionTutor(fila);
+        }
+
 
     }
 }

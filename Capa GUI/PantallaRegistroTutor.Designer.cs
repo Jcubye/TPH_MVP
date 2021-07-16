@@ -96,6 +96,7 @@ namespace Capa_GUI
             this.btnPrimero.TabIndex = 53;
             this.btnPrimero.Text = "<<";
             this.btnPrimero.UseVisualStyleBackColor = true;
+            this.btnPrimero.Click += new System.EventHandler(this.btnPrimero_Click);
             // 
             // btnSalir
             // 
@@ -288,6 +289,7 @@ namespace Capa_GUI
             this.Controls.Add(this.label1);
             this.Name = "PantallaRegistroTutor";
             this.Text = "PantallaRegistroTutor";
+            this.Load += new System.EventHandler(this.PantallaRegistroTutor_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

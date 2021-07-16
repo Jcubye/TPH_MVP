@@ -70,6 +70,20 @@
       <s:element name="buscaTutorServiceResponse">
         <s:complexType />
       </s:element>
+      <s:element name="posicionTutorService">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="fila" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="posicionTutorServiceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="posicionTutorServiceResult" type="tns:Tutor" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
     </s:schema>
   </wsdl:types>
   <wsdl:message name="insertarTutorServiceSoapIn">
@@ -102,6 +116,12 @@
   <wsdl:message name="buscaTutorServiceSoapOut">
     <wsdl:part name="parameters" element="tns:buscaTutorServiceResponse" />
   </wsdl:message>
+  <wsdl:message name="posicionTutorServiceSoapIn">
+    <wsdl:part name="parameters" element="tns:posicionTutorService" />
+  </wsdl:message>
+  <wsdl:message name="posicionTutorServiceSoapOut">
+    <wsdl:part name="parameters" element="tns:posicionTutorServiceResponse" />
+  </wsdl:message>
   <wsdl:portType name="WebServiceTutorSoap">
     <wsdl:operation name="insertarTutorService">
       <wsdl:input message="tns:insertarTutorServiceSoapIn" />
@@ -122,6 +142,10 @@
     <wsdl:operation name="buscaTutorService">
       <wsdl:input message="tns:buscaTutorServiceSoapIn" />
       <wsdl:output message="tns:buscaTutorServiceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="posicionTutorService">
+      <wsdl:input message="tns:posicionTutorServiceSoapIn" />
+      <wsdl:output message="tns:posicionTutorServiceSoapOut" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="WebServiceTutorSoap" type="tns:WebServiceTutorSoap">
@@ -171,6 +195,15 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="posicionTutorService">
+      <soap:operation soapAction="http://tempuri.org/posicionTutorService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
   </wsdl:binding>
   <wsdl:binding name="WebServiceTutorSoap12" type="tns:WebServiceTutorSoap">
     <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
@@ -212,6 +245,15 @@
     </wsdl:operation>
     <wsdl:operation name="buscaTutorService">
       <soap12:operation soapAction="http://tempuri.org/buscaTutorService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="posicionTutorService">
+      <soap12:operation soapAction="http://tempuri.org/posicionTutorService" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>

@@ -50,6 +50,13 @@ namespace Capa_GUI.ServiceTutor {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/buscaTutorService", ReplyAction="*")]
         System.Threading.Tasks.Task buscaTutorServiceAsync(string rut);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/posicionTutorService", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        Capa_GUI.ServiceTutor.Tutor posicionTutorService(int fila);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/posicionTutorService", ReplyAction="*")]
+        System.Threading.Tasks.Task<Capa_GUI.ServiceTutor.Tutor> posicionTutorServiceAsync(int fila);
     }
     
     /// <remarks/>
@@ -233,6 +240,14 @@ namespace Capa_GUI.ServiceTutor {
         
         public System.Threading.Tasks.Task buscaTutorServiceAsync(string rut) {
             return base.Channel.buscaTutorServiceAsync(rut);
+        }
+        
+        public Capa_GUI.ServiceTutor.Tutor posicionTutorService(int fila) {
+            return base.Channel.posicionTutorService(fila);
+        }
+        
+        public System.Threading.Tasks.Task<Capa_GUI.ServiceTutor.Tutor> posicionTutorServiceAsync(int fila) {
+            return base.Channel.posicionTutorServiceAsync(fila);
         }
     }
 }
