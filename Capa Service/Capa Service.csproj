@@ -68,9 +68,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Web.config" />
+    <Content Include="WebServiceTutor.asmx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebServiceTutor.asmx.cs">
+      <DependentUpon>WebServiceTutor.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -80,6 +85,23 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Capa Conexion\Capa Conexion.csproj">
+      <Project>{f48037fd-df98-4ec2-b26b-e29567970287}</Project>
+      <Name>Capa Conexion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Capa DTO\Capa DTO.csproj">
+      <Project>{51a4f2fe-13a4-444a-9bf2-9495b8c2e568}</Project>
+      <Name>Capa DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Capa Negocio\Capa Negocio.csproj">
+      <Project>{cb68b406-6e43-4a1a-9f03-0b72e8ec72f7}</Project>
+      <Name>Capa Negocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

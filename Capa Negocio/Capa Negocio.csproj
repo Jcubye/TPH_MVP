@@ -33,6 +33,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -41,7 +42,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="NegocioTutor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Capa Conexion\Capa Conexion.csproj">
+      <Project>{f48037fd-df98-4ec2-b26b-e29567970287}</Project>
+      <Name>Capa Conexion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Capa DTO\Capa DTO.csproj">
+      <Project>{51a4f2fe-13a4-444a-9bf2-9495b8c2e568}</Project>
+      <Name>Capa DTO</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

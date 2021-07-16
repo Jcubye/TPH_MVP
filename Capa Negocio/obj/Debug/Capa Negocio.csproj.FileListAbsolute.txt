@@ -1,0 +1,11 @@
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Negocio\bin\Debug\Capa Negocio.dll
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Negocio\bin\Debug\Capa Negocio.pdb
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Negocio\bin\Debug\Capa Conexion.dll
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Negocio\bin\Debug\Capa DTO.dll
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Negocio\bin\Debug\Capa Conexion.pdb
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Negocio\bin\Debug\Capa DTO.pdb
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Negocio\obj\Debug\Capa Negocio.csproj.AssemblyReference.cache
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Negocio\obj\Debug\Capa Negocio.csproj.CoreCompileInputs.cache
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Negocio\obj\Debug\Capa Negocio.csproj.CopyComplete
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Negocio\obj\Debug\Capa Negocio.dll
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Negocio\obj\Debug\Capa Negocio.pdb

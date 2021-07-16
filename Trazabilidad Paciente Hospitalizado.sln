@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.31424.327
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capa GUI", "Capa GUI\Capa GUI.csproj", "{D75C3F1E-7E2D-4844-BEA8-B71D47B71A2E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{CAF4F599-8B11-459C-BC74-266C981CCAB0} = {CAF4F599-8B11-459C-BC74-266C981CCAB0}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capa Conexion", "Capa Conexion\Capa Conexion.csproj", "{F48037FD-DF98-4EC2-B26B-E29567970287}"
 EndProject

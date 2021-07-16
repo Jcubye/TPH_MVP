@@ -1,0 +1,6 @@
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa DTO\bin\Debug\Capa DTO.dll
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa DTO\bin\Debug\Capa DTO.pdb
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa DTO\obj\Debug\Capa DTO.csproj.AssemblyReference.cache
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa DTO\obj\Debug\Capa DTO.csproj.CoreCompileInputs.cache
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa DTO\obj\Debug\Capa DTO.dll
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa DTO\obj\Debug\Capa DTO.pdb

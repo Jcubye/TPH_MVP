@@ -1,6 +1,6 @@
-C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Conexion\bin\Debug\Capa Conexion.exe
 C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Conexion\bin\Debug\Capa Conexion.pdb
 C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Conexion\obj\Debug\Capa Conexion.csproj.AssemblyReference.cache
 C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Conexion\obj\Debug\Capa Conexion.csproj.CoreCompileInputs.cache
-C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Conexion\obj\Debug\Capa Conexion.exe
 C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Conexion\obj\Debug\Capa Conexion.pdb
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Conexion\bin\Debug\Capa Conexion.dll
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Conexion\obj\Debug\Capa Conexion.dll

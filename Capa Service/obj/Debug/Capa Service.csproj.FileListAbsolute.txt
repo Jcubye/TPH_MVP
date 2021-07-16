@@ -1,0 +1,65 @@
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Service\bin\Capa Service.dll.config
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Service\bin\Capa Service.dll
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Service\bin\Capa Service.pdb
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Service\bin\roslyn\csc.exe
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Service\bin\roslyn\csc.exe.config
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Service\bin\roslyn\csc.rsp
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Service\bin\roslyn\csi.exe
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Service\bin\roslyn\csi.exe.config
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Service\bin\roslyn\csi.rsp
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Service\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Service\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Service\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Service\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Service\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Service\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Service\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Service\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Service\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Service\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Service\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Service\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Service\bin\roslyn\System.AppContext.dll
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Service\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Service\bin\roslyn\System.Console.dll
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Service\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Service\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Service\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Service\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Service\bin\roslyn\System.IO.Compression.dll
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Service\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Service\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Service\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Service\bin\roslyn\System.Net.Http.dll
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Service\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Service\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Service\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Service\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Service\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Service\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Service\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Service\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Service\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Service\bin\roslyn\System.ValueTuple.dll
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Service\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Service\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Service\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Service\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Service\bin\roslyn\vbc.exe
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Service\bin\roslyn\vbc.exe.config
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Service\bin\roslyn\vbc.rsp
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Service\bin\roslyn\VBCSCompiler.exe
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Service\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Service\bin\Capa Conexion.dll
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Service\bin\Capa DTO.dll
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Service\bin\Capa Negocio.dll
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Service\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Service\bin\Capa Conexion.pdb
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Service\bin\Capa DTO.pdb
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Service\bin\Capa Negocio.pdb
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Service\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Service\obj\Debug\Capa Service.csproj.AssemblyReference.cache
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Service\obj\Debug\Capa Service.csproj.CoreCompileInputs.cache
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Service\obj\Debug\Capa Service.csproj.CopyComplete
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Service\obj\Debug\Capa Service.dll
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa Service\obj\Debug\Capa Service.pdb

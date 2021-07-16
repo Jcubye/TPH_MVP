@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace Capa_Conexion
 {
-    class Clase_Conexion
+    public class Clase_Conexion
     {
         public class ConexionSQLSERVER
         {
