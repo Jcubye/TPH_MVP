@@ -65,6 +65,12 @@
     <Compile Include="PantallaHome.Designer.cs">
       <DependentUpon>PantallaHome.cs</DependentUpon>
     </Compile>
+    <Compile Include="PantallaListarTutor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaListarTutor.Designer.cs">
+      <DependentUpon>PantallaListarTutor.cs</DependentUpon>
+    </Compile>
     <Compile Include="PantallaLoginMedico.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,6 +133,9 @@
     <EmbeddedResource Include="PantallaHome.resx">
       <DependentUpon>PantallaHome.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PantallaListarTutor.resx">
+      <DependentUpon>PantallaListarTutor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PantallaLoginMedico.resx">
       <DependentUpon>PantallaLoginMedico.cs</DependentUpon>
     </EmbeddedResource>
@@ -163,10 +172,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="Connected Services\ServiceTutor\Capa_GUI.ServiceTutor.insertarTutorServiceResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
     <None Include="Connected Services\ServiceTutor\WebServiceTutor.wsdl" />
+    <None Include="Properties\DataSources\System.Data.DataSet.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -200,6 +207,16 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Capa Conexion\Capa Conexion.csproj">
+      <Project>{f48037fd-df98-4ec2-b26b-e29567970287}</Project>
+      <Name>Capa Conexion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Capa Service\Capa Service.csproj">
+      <Project>{caf4f599-8b11-459c-bc74-266c981ccab0}</Project>
+      <Name>Capa Service</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

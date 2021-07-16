@@ -2,6 +2,7 @@
 using Capa_Negocio;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.Services;
@@ -26,5 +27,36 @@ namespace Capa_Service
             auxNegocio.insertarTutor(tutor);
 
         }
+
+        [WebMethod]
+        public void actualizarTutorService(Tutor tutor)
+        {
+            NegocioTutor auxNegocio = new NegocioTutor();
+            auxNegocio.actualizarTutor(tutor);
+
+        }
+
+        [WebMethod]
+        public void eliminarTutorServce(String tutor)
+        {
+            NegocioTutor auxNegocio = new NegocioTutor();
+            auxNegocio.eliminarTutor(tutor);
+        }
+
+        [WebMethod]
+        public DataSet consultarTutorService()
+        {
+            NegocioTutor auxNegocio = new NegocioTutor();
+            return auxNegocio.consultarTutor();
+        }
+
+        [WebMethod]
+        public void buscaTutorService(String rut)
+        {
+            NegocioTutor auxNegocio = new NegocioTutor();
+            auxNegocio.buscaTutor(rut);
+        }
+
+
     }
 }

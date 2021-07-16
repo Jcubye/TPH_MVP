@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BE8D702F-9C81-A8EF-12BD-0F2FD9EA8353" name="UBICACION">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-07-10 14:49:58 UTC</createdTime>
+<ownerDesignName>TrazabilidadPacienteHospitalizado</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="6616E8A1-B054-46B9-73F6-51CBE7312EDB">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-07-10 14:50:28 UTC</createdTime>
+<ownerDesignName>TrazabilidadPacienteHospitalizado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="area" id="46DDBA7F-1C58-4E48-7FFA-76FA371AD179">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-07-10 14:50:28 UTC</createdTime>
+<ownerDesignName>TrazabilidadPacienteHospitalizado</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="camas" id="14C22539-4A65-5BD6-94FF-3652E6F33338">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-07-10 14:51:37 UTC</createdTime>
+<ownerDesignName>TrazabilidadPacienteHospitalizado</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="621EDFDD-1666-8A90-3D8B-A477BB49BCA2" name="UBICACION_PK">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-07-10 14:51:54 UTC</createdTime>
+<ownerDesignName>TrazabilidadPacienteHospitalizado</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6616E8A1-B054-46B9-73F6-51CBE7312EDB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

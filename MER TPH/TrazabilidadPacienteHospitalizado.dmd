@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="TrazabilidadPacienteHospitalizado" id="4B02AB43-C376-1145-1FAB-DE496B5CB482" version="3.5">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-07-05 23:00:27 UTC</createdTime>
+<ownerDesignName>TrazabilidadPacienteHospitalizado</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>4B02AB43-C376-1145-1FAB-DE496B5CB482</designId>
+</OSDM_Design>

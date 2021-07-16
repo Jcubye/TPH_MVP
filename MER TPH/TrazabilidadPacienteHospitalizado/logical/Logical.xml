@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="F8EB5097-1372-05CD-C6AD-00004A19D457" mainViewID="90D23701-86F2-B724-F782-31EA4CA157AD">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-07-05 23:00:27 UTC</createdTime>
+<ownerDesignName>TrazabilidadPacienteHospitalizado</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

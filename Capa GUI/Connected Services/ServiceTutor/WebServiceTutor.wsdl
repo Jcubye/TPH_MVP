@@ -23,6 +23,53 @@
       <s:element name="insertarTutorServiceResponse">
         <s:complexType />
       </s:element>
+      <s:element name="actualizarTutorService">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tutor" type="tns:Tutor" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="actualizarTutorServiceResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="eliminarTutorServce">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tutor" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="eliminarTutorServceResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="consultarTutorService">
+        <s:complexType />
+      </s:element>
+      <s:element name="consultarTutorServiceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="consultarTutorServiceResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="buscaTutorService">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="rut" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="buscaTutorServiceResponse">
+        <s:complexType />
+      </s:element>
     </s:schema>
   </wsdl:types>
   <wsdl:message name="insertarTutorServiceSoapIn">
@@ -31,10 +78,50 @@
   <wsdl:message name="insertarTutorServiceSoapOut">
     <wsdl:part name="parameters" element="tns:insertarTutorServiceResponse" />
   </wsdl:message>
+  <wsdl:message name="actualizarTutorServiceSoapIn">
+    <wsdl:part name="parameters" element="tns:actualizarTutorService" />
+  </wsdl:message>
+  <wsdl:message name="actualizarTutorServiceSoapOut">
+    <wsdl:part name="parameters" element="tns:actualizarTutorServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="eliminarTutorServceSoapIn">
+    <wsdl:part name="parameters" element="tns:eliminarTutorServce" />
+  </wsdl:message>
+  <wsdl:message name="eliminarTutorServceSoapOut">
+    <wsdl:part name="parameters" element="tns:eliminarTutorServceResponse" />
+  </wsdl:message>
+  <wsdl:message name="consultarTutorServiceSoapIn">
+    <wsdl:part name="parameters" element="tns:consultarTutorService" />
+  </wsdl:message>
+  <wsdl:message name="consultarTutorServiceSoapOut">
+    <wsdl:part name="parameters" element="tns:consultarTutorServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="buscaTutorServiceSoapIn">
+    <wsdl:part name="parameters" element="tns:buscaTutorService" />
+  </wsdl:message>
+  <wsdl:message name="buscaTutorServiceSoapOut">
+    <wsdl:part name="parameters" element="tns:buscaTutorServiceResponse" />
+  </wsdl:message>
   <wsdl:portType name="WebServiceTutorSoap">
     <wsdl:operation name="insertarTutorService">
       <wsdl:input message="tns:insertarTutorServiceSoapIn" />
       <wsdl:output message="tns:insertarTutorServiceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="actualizarTutorService">
+      <wsdl:input message="tns:actualizarTutorServiceSoapIn" />
+      <wsdl:output message="tns:actualizarTutorServiceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="eliminarTutorServce">
+      <wsdl:input message="tns:eliminarTutorServceSoapIn" />
+      <wsdl:output message="tns:eliminarTutorServceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="consultarTutorService">
+      <wsdl:input message="tns:consultarTutorServiceSoapIn" />
+      <wsdl:output message="tns:consultarTutorServiceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="buscaTutorService">
+      <wsdl:input message="tns:buscaTutorServiceSoapIn" />
+      <wsdl:output message="tns:buscaTutorServiceSoapOut" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="WebServiceTutorSoap" type="tns:WebServiceTutorSoap">
@@ -48,11 +135,83 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="actualizarTutorService">
+      <soap:operation soapAction="http://tempuri.org/actualizarTutorService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="eliminarTutorServce">
+      <soap:operation soapAction="http://tempuri.org/eliminarTutorServce" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarTutorService">
+      <soap:operation soapAction="http://tempuri.org/consultarTutorService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="buscaTutorService">
+      <soap:operation soapAction="http://tempuri.org/buscaTutorService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
   </wsdl:binding>
   <wsdl:binding name="WebServiceTutorSoap12" type="tns:WebServiceTutorSoap">
     <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
     <wsdl:operation name="insertarTutorService">
       <soap12:operation soapAction="http://tempuri.org/insertarTutorService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="actualizarTutorService">
+      <soap12:operation soapAction="http://tempuri.org/actualizarTutorService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="eliminarTutorServce">
+      <soap12:operation soapAction="http://tempuri.org/eliminarTutorServce" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarTutorService">
+      <soap12:operation soapAction="http://tempuri.org/consultarTutorService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="buscaTutorService">
+      <soap12:operation soapAction="http://tempuri.org/buscaTutorService" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>

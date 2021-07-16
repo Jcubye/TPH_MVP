@@ -1,0 +1,82 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A92E1660-B7A3-DD24-F601-8841AEDEFD4C" name="ATENCION">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-07-05 23:12:05 UTC</createdTime>
+<ownerDesignName>TrazabilidadPacienteHospitalizado</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="0B1FB5EB-D6F6-9FA9-56C4-E72B2C8D1741">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-07-07 23:31:45 UTC</createdTime>
+<ownerDesignName>TrazabilidadPacienteHospitalizado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha" id="184EFD5B-1406-481D-295F-F19E3784739E">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-07-07 23:41:26 UTC</createdTime>
+<ownerDesignName>TrazabilidadPacienteHospitalizado</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="detalle" id="66037C46-AC02-CDAF-5460-D7F032D2FF3F">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-07-07 23:31:45 UTC</createdTime>
+<ownerDesignName>TrazabilidadPacienteHospitalizado</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INGRESO_id" id="77623AA3-6648-4E6F-9B0B-038DFFBB23DF">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-07-07 23:41:32 UTC</createdTime>
+<ownerDesignName>TrazabilidadPacienteHospitalizado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9991E5D6-81A5-4EA7-246A-E7FBF69FE1A3" referredColumn="AF77C2BD-D09E-2B22-1EEC-CFA1FBD26704"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FF3C0B24-4DF3-77F3-3BF6-974EA499CEED" name="DETALLE_PACIENTE_PK">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-07-07 23:31:45 UTC</createdTime>
+<ownerDesignName>TrazabilidadPacienteHospitalizado</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0B1FB5EB-D6F6-9FA9-56C4-E72B2C8D1741"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EB867C87-D0C3-5758-5323-83C50ADE0E98" name="ATENCION_INGRESO_FK">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-07-07 23:41:32 UTC</createdTime>
+<ownerDesignName>TrazabilidadPacienteHospitalizado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="77623AA3-6648-4E6F-9B0B-038DFFBB23DF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

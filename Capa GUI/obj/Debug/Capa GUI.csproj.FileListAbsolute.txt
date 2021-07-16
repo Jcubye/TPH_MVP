@@ -18,3 +18,14 @@ C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Pacient
 C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa GUI\obj\Debug\Capa_GUI.PantallaRegistroMedico.resources
 C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa GUI\obj\Debug\Capa_GUI.PantallaRegistroPaciente.resources
 C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa GUI\obj\Debug\Capa_GUI.PantallaRegistroTutor.resources
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa GUI\obj\Debug\Capa_GUI.PantallaListarTutor.resources
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa GUI\bin\Debug\Capa Conexion.dll
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa GUI\bin\Debug\Capa Service.dll
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa GUI\bin\Debug\Capa DTO.dll
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa GUI\bin\Debug\Capa Negocio.dll
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa GUI\bin\Debug\Capa Conexion.pdb
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa GUI\bin\Debug\Capa Service.pdb
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa GUI\bin\Debug\Capa Service.dll.config
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa GUI\bin\Debug\Capa DTO.pdb
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa GUI\bin\Debug\Capa Negocio.pdb
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa GUI\obj\Debug\Capa GUI.csproj.CopyComplete

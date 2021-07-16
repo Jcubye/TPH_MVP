@@ -9,137 +9,152 @@
 //------------------------------------------------------------------------------
 
 namespace Capa_GUI.ServiceTutor {
-    using System.Runtime.Serialization;
-    using System;
+    using System.Data;
     
     
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Tutor", Namespace="http://tempuri.org/")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceTutor.WebServiceTutorSoap")]
+    public interface WebServiceTutorSoap {
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/insertarTutorService", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        void insertarTutorService(Capa_GUI.ServiceTutor.Tutor tutor);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/insertarTutorService", ReplyAction="*")]
+        System.Threading.Tasks.Task insertarTutorServiceAsync(Capa_GUI.ServiceTutor.Tutor tutor);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/actualizarTutorService", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        void actualizarTutorService(Capa_GUI.ServiceTutor.Tutor tutor);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/actualizarTutorService", ReplyAction="*")]
+        System.Threading.Tasks.Task actualizarTutorServiceAsync(Capa_GUI.ServiceTutor.Tutor tutor);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/eliminarTutorServce", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        void eliminarTutorServce(string tutor);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/eliminarTutorServce", ReplyAction="*")]
+        System.Threading.Tasks.Task eliminarTutorServceAsync(string tutor);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/consultarTutorService", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        System.Data.DataSet consultarTutorService();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/consultarTutorService", ReplyAction="*")]
+        System.Threading.Tasks.Task<System.Data.DataSet> consultarTutorServiceAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/buscaTutorService", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        void buscaTutorService(string rut);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/buscaTutorService", ReplyAction="*")]
+        System.Threading.Tasks.Task buscaTutorServiceAsync(string rut);
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
     [System.SerializableAttribute()]
-    public partial class Tutor : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
+    public partial class Tutor : object, System.ComponentModel.INotifyPropertyChanged {
         
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        private int idField;
         
-        private int IdField;
+        private string rutField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string RutField;
+        private string claveField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string ClaveField;
+        private string nombreField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string NombreField;
+        private string apellidoField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string ApellidoField;
+        private string telefonoField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string TelefonoField;
+        private string correoField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string CorreoField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
         public int Id {
             get {
-                return this.IdField;
+                return this.idField;
             }
             set {
-                if ((this.IdField.Equals(value) != true)) {
-                    this.IdField = value;
-                    this.RaisePropertyChanged("Id");
-                }
+                this.idField = value;
+                this.RaisePropertyChanged("Id");
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
         public string Rut {
             get {
-                return this.RutField;
+                return this.rutField;
             }
             set {
-                if ((object.ReferenceEquals(this.RutField, value) != true)) {
-                    this.RutField = value;
-                    this.RaisePropertyChanged("Rut");
-                }
+                this.rutField = value;
+                this.RaisePropertyChanged("Rut");
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
         public string Clave {
             get {
-                return this.ClaveField;
+                return this.claveField;
             }
             set {
-                if ((object.ReferenceEquals(this.ClaveField, value) != true)) {
-                    this.ClaveField = value;
-                    this.RaisePropertyChanged("Clave");
-                }
+                this.claveField = value;
+                this.RaisePropertyChanged("Clave");
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
         public string Nombre {
             get {
-                return this.NombreField;
+                return this.nombreField;
             }
             set {
-                if ((object.ReferenceEquals(this.NombreField, value) != true)) {
-                    this.NombreField = value;
-                    this.RaisePropertyChanged("Nombre");
-                }
+                this.nombreField = value;
+                this.RaisePropertyChanged("Nombre");
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=4)]
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
         public string Apellido {
             get {
-                return this.ApellidoField;
+                return this.apellidoField;
             }
             set {
-                if ((object.ReferenceEquals(this.ApellidoField, value) != true)) {
-                    this.ApellidoField = value;
-                    this.RaisePropertyChanged("Apellido");
-                }
+                this.apellidoField = value;
+                this.RaisePropertyChanged("Apellido");
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=5)]
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=5)]
         public string Telefono {
             get {
-                return this.TelefonoField;
+                return this.telefonoField;
             }
             set {
-                if ((object.ReferenceEquals(this.TelefonoField, value) != true)) {
-                    this.TelefonoField = value;
-                    this.RaisePropertyChanged("Telefono");
-                }
+                this.telefonoField = value;
+                this.RaisePropertyChanged("Telefono");
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=6)]
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=6)]
         public string Correo {
             get {
-                return this.CorreoField;
+                return this.correoField;
             }
             set {
-                if ((object.ReferenceEquals(this.CorreoField, value) != true)) {
-                    this.CorreoField = value;
-                    this.RaisePropertyChanged("Correo");
-                }
+                this.correoField = value;
+                this.RaisePropertyChanged("Correo");
             }
         }
         
@@ -150,79 +165,6 @@ namespace Capa_GUI.ServiceTutor {
             if ((propertyChanged != null)) {
                 propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
             }
-        }
-    }
-    
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceTutor.WebServiceTutorSoap")]
-    public interface WebServiceTutorSoap {
-        
-        // CODEGEN: Generating message contract since element name tutor from namespace http://tempuri.org/ is not marked nillable
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/insertarTutorService", ReplyAction="*")]
-        Capa_GUI.ServiceTutor.insertarTutorServiceResponse insertarTutorService(Capa_GUI.ServiceTutor.insertarTutorServiceRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/insertarTutorService", ReplyAction="*")]
-        System.Threading.Tasks.Task<Capa_GUI.ServiceTutor.insertarTutorServiceResponse> insertarTutorServiceAsync(Capa_GUI.ServiceTutor.insertarTutorServiceRequest request);
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class insertarTutorServiceRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="insertarTutorService", Namespace="http://tempuri.org/", Order=0)]
-        public Capa_GUI.ServiceTutor.insertarTutorServiceRequestBody Body;
-        
-        public insertarTutorServiceRequest() {
-        }
-        
-        public insertarTutorServiceRequest(Capa_GUI.ServiceTutor.insertarTutorServiceRequestBody Body) {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
-    public partial class insertarTutorServiceRequestBody {
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public Capa_GUI.ServiceTutor.Tutor tutor;
-        
-        public insertarTutorServiceRequestBody() {
-        }
-        
-        public insertarTutorServiceRequestBody(Capa_GUI.ServiceTutor.Tutor tutor) {
-            this.tutor = tutor;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class insertarTutorServiceResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="insertarTutorServiceResponse", Namespace="http://tempuri.org/", Order=0)]
-        public Capa_GUI.ServiceTutor.insertarTutorServiceResponseBody Body;
-        
-        public insertarTutorServiceResponse() {
-        }
-        
-        public insertarTutorServiceResponse(Capa_GUI.ServiceTutor.insertarTutorServiceResponseBody Body) {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute()]
-    public partial class insertarTutorServiceResponseBody {
-        
-        public insertarTutorServiceResponseBody() {
         }
     }
     
@@ -253,28 +195,44 @@ namespace Capa_GUI.ServiceTutor {
                 base(binding, remoteAddress) {
         }
         
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Capa_GUI.ServiceTutor.insertarTutorServiceResponse Capa_GUI.ServiceTutor.WebServiceTutorSoap.insertarTutorService(Capa_GUI.ServiceTutor.insertarTutorServiceRequest request) {
-            return base.Channel.insertarTutorService(request);
-        }
-        
         public void insertarTutorService(Capa_GUI.ServiceTutor.Tutor tutor) {
-            Capa_GUI.ServiceTutor.insertarTutorServiceRequest inValue = new Capa_GUI.ServiceTutor.insertarTutorServiceRequest();
-            inValue.Body = new Capa_GUI.ServiceTutor.insertarTutorServiceRequestBody();
-            inValue.Body.tutor = tutor;
-            Capa_GUI.ServiceTutor.insertarTutorServiceResponse retVal = ((Capa_GUI.ServiceTutor.WebServiceTutorSoap)(this)).insertarTutorService(inValue);
+            base.Channel.insertarTutorService(tutor);
         }
         
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Capa_GUI.ServiceTutor.insertarTutorServiceResponse> Capa_GUI.ServiceTutor.WebServiceTutorSoap.insertarTutorServiceAsync(Capa_GUI.ServiceTutor.insertarTutorServiceRequest request) {
-            return base.Channel.insertarTutorServiceAsync(request);
+        public System.Threading.Tasks.Task insertarTutorServiceAsync(Capa_GUI.ServiceTutor.Tutor tutor) {
+            return base.Channel.insertarTutorServiceAsync(tutor);
         }
         
-        public System.Threading.Tasks.Task<Capa_GUI.ServiceTutor.insertarTutorServiceResponse> insertarTutorServiceAsync(Capa_GUI.ServiceTutor.Tutor tutor) {
-            Capa_GUI.ServiceTutor.insertarTutorServiceRequest inValue = new Capa_GUI.ServiceTutor.insertarTutorServiceRequest();
-            inValue.Body = new Capa_GUI.ServiceTutor.insertarTutorServiceRequestBody();
-            inValue.Body.tutor = tutor;
-            return ((Capa_GUI.ServiceTutor.WebServiceTutorSoap)(this)).insertarTutorServiceAsync(inValue);
+        public void actualizarTutorService(Capa_GUI.ServiceTutor.Tutor tutor) {
+            base.Channel.actualizarTutorService(tutor);
+        }
+        
+        public System.Threading.Tasks.Task actualizarTutorServiceAsync(Capa_GUI.ServiceTutor.Tutor tutor) {
+            return base.Channel.actualizarTutorServiceAsync(tutor);
+        }
+        
+        public void eliminarTutorServce(string tutor) {
+            base.Channel.eliminarTutorServce(tutor);
+        }
+        
+        public System.Threading.Tasks.Task eliminarTutorServceAsync(string tutor) {
+            return base.Channel.eliminarTutorServceAsync(tutor);
+        }
+        
+        public System.Data.DataSet consultarTutorService() {
+            return base.Channel.consultarTutorService();
+        }
+        
+        public System.Threading.Tasks.Task<System.Data.DataSet> consultarTutorServiceAsync() {
+            return base.Channel.consultarTutorServiceAsync();
+        }
+        
+        public void buscaTutorService(string rut) {
+            base.Channel.buscaTutorService(rut);
+        }
+        
+        public System.Threading.Tasks.Task buscaTutorServiceAsync(string rut) {
+            return base.Channel.buscaTutorServiceAsync(rut);
         }
     }
 }

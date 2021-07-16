@@ -160,6 +160,12 @@ namespace Capa_GUI
         {
 
         }
+
+        private void btnListar_Click(object sender, EventArgs e)
+        {
+            PantallaListarTutor pListarTutor = new PantallaListarTutor();
+            pListarTutor.ShowDialog();
+        }
     }
 }
     
