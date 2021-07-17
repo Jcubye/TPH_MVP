@@ -42,13 +42,11 @@ namespace Capa_Negocio
         public void actualizarTutor(Tutor tutor)
         {
             this.configurarConexion();
-            this.Conec.CadenaSQL = "UPDATE dbo.tutor SET rut = '" + tutor.Rut +
-                ", clave = '" + tutor.Clave +
-                ", nombre = '" + tutor.Nombre +
-                ", apellido = '" + tutor.Apellido +
-                ", telefono = '" + tutor.Telefono +
-                ", correo = '" + tutor.Correo +
-
+            this.Conec.CadenaSQL = "UPDATE dbo.tutor SET clave = '" + tutor.Clave +
+                "', nombre = '" + tutor.Nombre +
+                "', apellido = '" + tutor.Apellido +
+                "', telefono = '" + tutor.Telefono +
+                "', correo = '" + tutor.Correo +
                 "' WHERE rut = '" + tutor.Rut + "';";
             this.Conec.EsSelect = false;
             this.Conec.conectar();

@@ -94,13 +94,24 @@ namespace Capa_GUI
             }
             else
             {
+                if(this.btnRegistrar.Text.Equals("Nuevo"))
+                {
+                    this.btnRegistrar.Text = "Registrar";
+                }
+                if (this.btnModificar.Text.Equals("Actualizar"))
+                {
+                    this.btnModificar.Text = "Modificar";
+                }
+                if (this.btnEliminar.Text.Equals("Confirmar"))
+                {
+                    this.btnEliminar.Text = "Eliminar";
+                }
                 this.deshabilitar();
-                this.txtRut.Text = "Nuevo";
-                this.txtClave.Enabled = true;
-                this.txtNombre.Enabled = true;
-                this.txtApellido.Enabled = true;
-                this.txtTelefono.Enabled = true;
-                this.txtCorreo.Enabled = true;
+                this.mostrar();
+                this.btnRegistrar.Enabled = true;
+                this.btnModificar.Enabled = true;
+                this.btnEliminar.Enabled = true;
+                this.btnListar.Enabled = true;
                 this.btnSalir.Text = "Salir";
                 //this.mostrar();
             }
@@ -128,7 +139,7 @@ namespace Capa_GUI
                 {
                     ServiceTutor.WebServiceTutorSoapClient auxServiceTutor = new ServiceTutor.WebServiceTutorSoapClient();
                     ServiceTutor.Tutor auxTutor = new ServiceTutor.Tutor();
-
+                    this.deshabilitar();
                     auxTutor.Id = 0;
                     auxTutor.Rut = this.txtRut.Text;
                     auxTutor.Clave = this.txtClave.Text;
@@ -147,8 +158,8 @@ namespace Capa_GUI
                         auxServiceTutor.insertarTutorService(auxTutor);
 
                         MessageBox.Show("¡Datos Guardados!", "System");
-                        this.deshabilitar();
-                        this.btnRegistrar.Text = "Registrar";
+                        
+                        
                         this.btnModificar.Enabled = true;
                         this.btnEliminar.Enabled = true;
                         this.btnListar.Enabled = true;
@@ -156,11 +167,14 @@ namespace Capa_GUI
                         this.btnAnterior.Enabled = true;
                         this.btnSiguiente.Enabled = true;
                         this.btnUltimo.Enabled = true;
+                        this.btnRegistrar.Text = "Registrar";
                         this.btnSalir.Text = "Salir";
                         this.Posicion = this.Posicion + 1;
+                        
                         this.mostrar();
 
                     }
+                   
 
                 }
             }
@@ -168,8 +182,18 @@ namespace Capa_GUI
             catch (Exception ex)
             {
                 MessageBox.Show("Datos no Guardados" + ex.Message, "System");
+                this.btnModificar.Enabled = true;
+                this.btnEliminar.Enabled = true;
+                this.btnListar.Enabled = true;
+                this.btnPrimero.Enabled = true;
+                this.btnAnterior.Enabled = true;
+                this.btnSiguiente.Enabled = true;
+                this.btnUltimo.Enabled = true;
+                this.btnRegistrar.Text = "Registrar";
+                this.btnSalir.Text = "Salir";
                 this.limpiar();
             }
+            
         }
 
         private void txtApellido_TextChanged(object sender, EventArgs e)
@@ -215,7 +239,6 @@ namespace Capa_GUI
                         this.btnRegistrar.Enabled = true;
                         this.btnModificar.Enabled = true;
                         this.btnListar.Enabled = true;
-                        this.deshabilitar();
                         this.btnEliminar.Text = "Eliminar";
                         this.btnSalir.Text = "Salir";
                         this.mostrar();
@@ -229,11 +252,11 @@ namespace Capa_GUI
                 {
                     this.deshabilitar();
                     this.btnEliminar.Enabled = true;
-                    this.btnEliminar.Text = "Confirmar";
                     this.btnRegistrar.Enabled = false;
                     this.btnModificar.Enabled = false;
                     this.btnListar.Enabled = false;
                     this.btnSalir.Text = "Cancelar";
+                    this.btnEliminar.Text = "Confirmar";
                 }
                 
 
@@ -287,7 +310,69 @@ namespace Capa_GUI
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
+            try
+            {
+                if (this.btnModificar.Text == "Modificar")
+                {
+                    this.habilitar();
+                    this.btnModificar.Text = "Actualizar";
+                    this.btnRegistrar.Enabled = false;
+                    this.btnEliminar.Enabled = false;
+                    this.btnListar.Enabled = false;
+                    this.btnPrimero.Enabled = false;
+                    this.btnAnterior.Enabled = false;
+                    this.btnSiguiente.Enabled = false;
+                    this.btnUltimo.Enabled = false;
+                    this.btnSalir.Text = "Cancelar";
+                }
+                else
+                {
+                    ServiceTutor.WebServiceTutorSoapClient auxServiceTutor = new ServiceTutor.WebServiceTutorSoapClient();
+                    ServiceTutor.Tutor auxTutor = new ServiceTutor.Tutor();
+                    deshabilitar();
+                    auxTutor.Rut = this.txtRut.Text;
+                    auxTutor.Clave = this.txtClave.Text;
+                    auxTutor.Nombre = this.txtNombre.Text;
+                    auxTutor.Apellido = this.txtApellido.Text;
+                    auxTutor.Telefono = this.txtTelefono.Text;
+                    auxTutor.Correo = this.txtCorreo.Text;
 
+                    if (String.IsNullOrEmpty(this.txtClave.Text)
+                        )
+                    {
+                        MessageBox.Show("Debe ingresar Clave", "System");
+                    }
+                    else
+                    {
+                        auxServiceTutor.actualizarTutorService(auxTutor);
+
+                        MessageBox.Show("¡Datos Actualizados!", "System");
+                        this.btnModificar.Text = "Modificar";
+                        this.btnRegistrar.Enabled = true;
+                        this.btnEliminar.Enabled = true;
+                        this.btnListar.Enabled = true;
+                        this.btnPrimero.Enabled = true;
+                        this.btnAnterior.Enabled = true;
+                        this.btnSiguiente.Enabled = true;
+                        this.btnUltimo.Enabled = true;
+                        this.btnSalir.Text = "Salir";
+                        this.Posicion = this.Posicion + 1;
+                        this.mostrar();
+                        //this.deshabilitar();
+
+                    }
+
+                }
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show("Datos no Guardados" + ex.Message, "System");
+                this.limpiar();
+            }
+            
+                   
+                
         }
 
         private void txtRut_TextChanged(object sender, EventArgs e)
