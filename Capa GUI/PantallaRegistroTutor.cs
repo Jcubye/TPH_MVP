@@ -315,6 +315,7 @@ namespace Capa_GUI
                 if (this.btnModificar.Text == "Modificar")
                 {
                     this.habilitar();
+                    this.txtRut.Enabled = false;
                     this.btnModificar.Text = "Actualizar";
                     this.btnRegistrar.Enabled = false;
                     this.btnEliminar.Enabled = false;
