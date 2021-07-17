@@ -69,6 +69,7 @@ namespace Capa_GUI
             this.btnUltimo.TabIndex = 56;
             this.btnUltimo.Text = ">>";
             this.btnUltimo.UseVisualStyleBackColor = true;
+            this.btnUltimo.Click += new System.EventHandler(this.btnUltimo_Click);
             // 
             // btnSiguiente
             // 
@@ -78,6 +79,7 @@ namespace Capa_GUI
             this.btnSiguiente.TabIndex = 55;
             this.btnSiguiente.Text = ">";
             this.btnSiguiente.UseVisualStyleBackColor = true;
+            this.btnSiguiente.Click += new System.EventHandler(this.btnSiguiente_Click);
             // 
             // btnAnterior
             // 
@@ -87,6 +89,7 @@ namespace Capa_GUI
             this.btnAnterior.TabIndex = 54;
             this.btnAnterior.Text = "<";
             this.btnAnterior.UseVisualStyleBackColor = true;
+            this.btnAnterior.Click += new System.EventHandler(this.btnAnterior_Click);
             // 
             // btnPrimero
             // 
@@ -136,6 +139,7 @@ namespace Capa_GUI
             this.btnModificar.TabIndex = 49;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // btnRegistrar
             // 

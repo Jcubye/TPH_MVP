@@ -39,6 +39,7 @@ namespace Capa_GUI
             this.txtRut.Text = auxTutor.Rut;
             this.txtClave.Text = auxTutor.Clave;
             this.txtNombre.Text = auxTutor.Nombre;
+            this.txtApellido.Text = auxTutor.Apellido;
             this.txtTelefono.Text = auxTutor.Telefono;
             this.txtCorreo.Text = auxTutor.Correo;
 
@@ -199,7 +200,8 @@ namespace Capa_GUI
 
         private void btnPrimero_Click(object sender, EventArgs e)
         {
-
+            Posicion = 0;
+            mostrar();
         }
 
         private void PantallaRegistroTutor_Load(object sender, EventArgs e)
@@ -208,6 +210,29 @@ namespace Capa_GUI
             this.mostrar();
             this.deshabilitar();
             this.txtPosicion.Enabled = false;
+        }
+
+        private void btnAnterior_Click(object sender, EventArgs e)
+        {
+            this.Posicion = this.Posicion - 1;
+            mostrar();
+        }
+
+        private void btnSiguiente_Click(object sender, EventArgs e)
+        {
+            this.Posicion = this.Posicion + 1;
+            mostrar();
+        }
+
+        private void btnUltimo_Click(object sender, EventArgs e)
+        {
+            this.Posicion = this.Ultimo;
+            mostrar();
+        }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
