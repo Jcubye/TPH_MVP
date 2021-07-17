@@ -252,6 +252,7 @@ namespace Capa_GUI
             this.txtRut.Name = "txtRut";
             this.txtRut.Size = new System.Drawing.Size(100, 22);
             this.txtRut.TabIndex = 30;
+            this.txtRut.TextChanged += new System.EventHandler(this.txtRut_TextChanged);
             // 
             // label1
             // 

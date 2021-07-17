@@ -68,7 +68,11 @@
         </s:complexType>
       </s:element>
       <s:element name="buscaTutorServiceResponse">
-        <s:complexType />
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="buscaTutorServiceResult" type="tns:Tutor" />
+          </s:sequence>
+        </s:complexType>
       </s:element>
       <s:element name="posicionTutorService">
         <s:complexType>

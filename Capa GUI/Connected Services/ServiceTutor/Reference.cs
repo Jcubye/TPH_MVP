@@ -46,10 +46,10 @@ namespace Capa_GUI.ServiceTutor {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/buscaTutorService", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        void buscaTutorService(string rut);
+        Capa_GUI.ServiceTutor.Tutor buscaTutorService(string rut);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/buscaTutorService", ReplyAction="*")]
-        System.Threading.Tasks.Task buscaTutorServiceAsync(string rut);
+        System.Threading.Tasks.Task<Capa_GUI.ServiceTutor.Tutor> buscaTutorServiceAsync(string rut);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/posicionTutorService", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -234,11 +234,11 @@ namespace Capa_GUI.ServiceTutor {
             return base.Channel.consultarTutorServiceAsync();
         }
         
-        public void buscaTutorService(string rut) {
-            base.Channel.buscaTutorService(rut);
+        public Capa_GUI.ServiceTutor.Tutor buscaTutorService(string rut) {
+            return base.Channel.buscaTutorService(rut);
         }
         
-        public System.Threading.Tasks.Task buscaTutorServiceAsync(string rut) {
+        public System.Threading.Tasks.Task<Capa_GUI.ServiceTutor.Tutor> buscaTutorServiceAsync(string rut) {
             return base.Channel.buscaTutorServiceAsync(rut);
         }
         

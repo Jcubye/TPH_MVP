@@ -24,13 +24,14 @@ namespace Capa_GUI
         {
             ServiceTutor.WebServiceTutorSoapClient auxService = new ServiceTutor.WebServiceTutorSoapClient();
             ServiceTutor.Tutor auxTutor = new ServiceTutor.Tutor();
-            this.Ultimo = auxService.consultarTutorService().Tables[0].Rows.Count - 1;
+            this.Ultimo = auxService.consultarTutorService().Tables[0].Rows.Count -1;
 
 
 
 
             if (this.Posicion < 0)
                 this.Posicion = 0;
+
             if (this.Posicion >= this.Ultimo)
                 this.Posicion = this.Ultimo;
 
@@ -143,16 +144,6 @@ namespace Capa_GUI
                     }
                     else
                     {
-                        //no valida si existe, pero en este caso no lo hara ya que Id no es ingresable y se autoincrementa
-                        //if (String.IsNullOrEmpty(auxServiceDepartamento.buscaDepartamento(auxDepartamento.Id).Nombre))
-                        //{
-                        //    MessageBox.Show("El Departamento ya existe", "System");
-                        //}
-                        //else
-                        //{
-                        //aca iria el grabar, si el dpto no existiera
-                        //}
-                        //auxServiceDepartamento.insertarDepartamentoService(auxDepartamento);
                         auxServiceTutor.insertarTutorService(auxTutor);
 
                         MessageBox.Show("¡Datos Guardados!", "System");
@@ -166,8 +157,8 @@ namespace Capa_GUI
                         this.btnSiguiente.Enabled = true;
                         this.btnUltimo.Enabled = true;
                         this.btnSalir.Text = "Salir";
-                        //this.mostrar();
-
+                        this.Posicion = this.Posicion + 1;
+                        this.mostrar();
 
                     }
 
@@ -190,7 +181,71 @@ namespace Capa_GUI
         private void txtEliminar_Click(object sender, EventArgs e)
         {
 
-        }
+            try
+            {
+                if (this.btnEliminar.Text.Equals("Confirmar"))
+                {
+                    //Validar rut nulo o vacio
+                    if (String.IsNullOrEmpty(this.txtRut.Text.Trim()))
+                    {
+                        MessageBox.Show("Falta Rut ", "Sistema");
+                        return;
+                    }
+
+                    ServiceTutor.WebServiceTutorSoapClient auxServicio = new ServiceTutor.WebServiceTutorSoapClient();
+
+                    //Se valida si el cliente existe
+
+                    if (String.IsNullOrEmpty(auxServicio.buscaTutorService(this.txtRut.Text).Rut))
+                    {
+                        MessageBox.Show("Tutor no Existe ", "System");
+                        this.txtRut.Focus();
+                        return;
+                    }
+
+                    //Confirmar eliminar
+                    if ((MessageBox.Show("Esta seguro de Eliminar?", "Sistema",
+         MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+         == DialogResult.Yes))
+                    {
+                        auxServicio.eliminarTutorServce(this.txtRut.Text);
+                        MessageBox.Show("Tutor Eliminado ", "System");
+
+                        //Volver la pantalla
+                        this.btnRegistrar.Enabled = true;
+                        this.btnModificar.Enabled = true;
+                        this.btnListar.Enabled = true;
+                        this.deshabilitar();
+                        this.btnEliminar.Text = "Eliminar";
+                        this.btnSalir.Text = "Salir";
+                        this.mostrar();
+                    }
+                    
+                    
+
+
+                }
+                else
+                {
+                    this.deshabilitar();
+                    this.btnEliminar.Enabled = true;
+                    this.btnEliminar.Text = "Confirmar";
+                    this.btnRegistrar.Enabled = false;
+                    this.btnModificar.Enabled = false;
+                    this.btnListar.Enabled = false;
+                    this.btnSalir.Text = "Cancelar";
+                }
+                
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Datos no Eliminados " + ex.Message, "Sistema");
+
+            }
+        } //Fin eliminar
+    
 
         private void btnListar_Click(object sender, EventArgs e)
         {
@@ -231,6 +286,11 @@ namespace Capa_GUI
         }
 
         private void btnModificar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtRut_TextChanged(object sender, EventArgs e)
         {
 
         }

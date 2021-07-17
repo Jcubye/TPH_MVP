@@ -51,10 +51,10 @@ namespace Capa_Service
         }
 
         [WebMethod]
-        public void buscaTutorService(String rut)
+        public Tutor buscaTutorService(String rut)
         {
             NegocioTutor auxNegocio = new NegocioTutor();
-            auxNegocio.buscaTutor(rut);
+            return auxNegocio.buscaTutor(rut);
         }
 
         [WebMethod]
