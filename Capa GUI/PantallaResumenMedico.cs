@@ -31,7 +31,7 @@ namespace Capa_GUI
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            PantallaRegistroDepartamento pRegistroDepartamento = new PantallaRegistroDepartamento();
+            PantallaRegistroUbicacion pRegistroDepartamento = new PantallaRegistroUbicacion();
             pRegistroDepartamento.ShowDialog();
         }
     }

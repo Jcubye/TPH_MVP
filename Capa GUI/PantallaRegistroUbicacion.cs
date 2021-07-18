@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Capa_GUI
 {
-    public partial class PantallaRegistroDepartamento : Form
+    public partial class PantallaRegistroUbicacion : Form
     {
-        public PantallaRegistroDepartamento()
+        public PantallaRegistroUbicacion()
         {
             InitializeComponent();
         }
@@ -26,6 +26,12 @@ namespace Capa_GUI
         private void txtArea_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtListar_Click(object sender, EventArgs e)
+        {
+            PantallaListarUbicacion pListarUbicacion = new PantallaListarUbicacion();
+            pListarUbicacion.ShowDialog();
         }
     }
 }

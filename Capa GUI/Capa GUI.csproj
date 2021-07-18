@@ -58,6 +58,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Connected Services\ServiceUbicacion\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="PantallaAdministrador.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +74,12 @@
     </Compile>
     <Compile Include="PantallaHome.Designer.cs">
       <DependentUpon>PantallaHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PantallaListarUbicacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaListarUbicacion.Designer.cs">
+      <DependentUpon>PantallaListarUbicacion.cs</DependentUpon>
     </Compile>
     <Compile Include="PantallaListarMedico.cs">
       <SubType>Form</SubType>
@@ -100,11 +111,11 @@
     <Compile Include="PantallaRegistroAtencion.Designer.cs">
       <DependentUpon>PantallaRegistroAtencion.cs</DependentUpon>
     </Compile>
-    <Compile Include="PantallaRegistroDepartamento.cs">
+    <Compile Include="PantallaRegistroUbicacion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PantallaRegistroDepartamento.Designer.cs">
-      <DependentUpon>PantallaRegistroDepartamento.cs</DependentUpon>
+    <Compile Include="PantallaRegistroUbicacion.Designer.cs">
+      <DependentUpon>PantallaRegistroUbicacion.cs</DependentUpon>
     </Compile>
     <Compile Include="PantallaRegistroMedico.cs">
       <SubType>Form</SubType>
@@ -144,6 +155,9 @@
     <EmbeddedResource Include="PantallaHome.resx">
       <DependentUpon>PantallaHome.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PantallaListarUbicacion.resx">
+      <DependentUpon>PantallaListarUbicacion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PantallaListarMedico.resx">
       <DependentUpon>PantallaListarMedico.cs</DependentUpon>
     </EmbeddedResource>
@@ -159,8 +173,8 @@
     <EmbeddedResource Include="PantallaRegistroAtencion.resx">
       <DependentUpon>PantallaRegistroAtencion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PantallaRegistroDepartamento.resx">
-      <DependentUpon>PantallaRegistroDepartamento.cs</DependentUpon>
+    <EmbeddedResource Include="PantallaRegistroUbicacion.resx">
+      <DependentUpon>PantallaRegistroUbicacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PantallaRegistroMedico.resx">
       <DependentUpon>PantallaRegistroMedico.cs</DependentUpon>
@@ -194,6 +208,10 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\ServiceTutor\WebServiceTutor.wsdl" />
+    <None Include="Connected Services\ServiceUbicacion\Capa_GUI.ServiceUbicacion.Ubicacion.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceUbicacion\WebServiceUbicacion.wsdl" />
     <None Include="Properties\DataSources\System.Data.DataSet.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -214,6 +232,7 @@
   <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\ServiceMedico\" />
     <WCFMetadataStorage Include="Connected Services\ServiceTutor\" />
+    <WCFMetadataStorage Include="Connected Services\ServiceUbicacion\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Connected Services\ServiceTutor\WebServiceTutor.disco" />
@@ -251,6 +270,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Connected Services\ServiceMedico\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceUbicacion\WebServiceUbicacion.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceUbicacion\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceUbicacion\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceUbicacion\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>

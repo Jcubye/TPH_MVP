@@ -1,7 +1,7 @@
 ﻿
 namespace Capa_GUI
 {
-    partial class PantallaRegistroDepartamento
+    partial class PantallaRegistroUbicacion
     {
         /// <summary>
         /// Required designer variable.
@@ -107,6 +107,7 @@ namespace Capa_GUI
             this.txtListar.TabIndex = 43;
             this.txtListar.Text = "Listar";
             this.txtListar.UseVisualStyleBackColor = true;
+            this.txtListar.Click += new System.EventHandler(this.txtListar_Click);
             // 
             // txtEliminar
             // 
@@ -178,7 +179,7 @@ namespace Capa_GUI
             this.label1.TabIndex = 29;
             this.label1.Text = "Registro Departamentos";
             // 
-            // PantallaRegistroDepartamento
+            // PantallaRegistroUbicacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -198,7 +199,7 @@ namespace Capa_GUI
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtArea);
             this.Controls.Add(this.label1);
-            this.Name = "PantallaRegistroDepartamento";
+            this.Name = "PantallaRegistroUbicacion";
             this.Text = "PantallaRegistroDepartamento";
             this.ResumeLayout(false);
             this.PerformLayout();
