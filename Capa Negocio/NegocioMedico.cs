@@ -41,10 +41,10 @@ namespace Capa_Negocio
         public void actualizarMedico(Medico_cargo medico)
         {
             this.configurarConexion();
-            this.Conec.CadenaSQL = "UPDATE dbo.,medico_cargo SET clave = '" + medico.Clave +
+            this.Conec.CadenaSQL = "UPDATE dbo.medico_cargo SET clave = '" + medico.Clave +
                 "', nombre = '" + medico.Nombre +
                 "', apellido = '" + medico.Apellido +
-                "', telefono = '" + medico.Especialidad +
+                "', especialidad = '" + medico.Especialidad +
                 "' WHERE rut = '" + medico.Rut + "';";
             this.Conec.EsSelect = false;
             this.Conec.conectar();
@@ -65,8 +65,8 @@ namespace Capa_Negocio
         {
             this.configurarConexion();
             //es necesario referenciar la tabla sino no se cae
-            this.Conec.NombreTabla = "cargo_medico";
-            this.Conec.CadenaSQL = "SELECT * FROM dbo.cargo_medico;";
+            this.Conec.NombreTabla = "medico_cargo";
+            this.Conec.CadenaSQL = "SELECT * FROM medico_cargo;";
             this.Conec.EsSelect = true;
             this.Conec.conectar();
             return this.Conec.DbDataSet;
@@ -102,7 +102,7 @@ namespace Capa_Negocio
                 auxMedico.Nombre = String.Empty;
                 auxMedico.Apellido = String.Empty;
                 auxMedico.Especialidad = String.Empty;
-                MessageBox.Show("Error al buscar tutor", "Mensaje de Sistema" + ex.Message);
+                MessageBox.Show("Error al buscar Medico", "Mensaje de Sistema" + ex.Message);
             }
 
             return auxMedico;

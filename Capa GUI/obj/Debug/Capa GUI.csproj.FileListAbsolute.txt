@@ -29,3 +29,4 @@ C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Pacient
 C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa GUI\bin\Debug\Capa DTO.pdb
 C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa GUI\bin\Debug\Capa Negocio.pdb
 C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa GUI\obj\Debug\Capa GUI.csproj.CopyComplete
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa GUI\obj\Debug\Capa_GUI.PantallaListarMedico.resources

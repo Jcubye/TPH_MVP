@@ -23,9 +23,13 @@ namespace Capa_GUI
         {
             ServiceMedico.WebServiceMedicoCargoSoapClient auxService = new ServiceMedico.WebServiceMedicoCargoSoapClient();
             ServiceMedico.Medico_cargo auxMedico = new ServiceMedico.Medico_cargo();
-            this.Ultimo = auxService.consultarMedicoService().Tables[0].Rows.Count - 1;
+            
 
-            if (this.Posicion < 0)
+            this.Ultimo = auxService.consultarMedicoService().Tables[0].Rows.Count - 1;
+            
+            
+
+            if (this.Posicion <= 0)
                 this.Posicion = 0;
 
             if (this.Posicion >= this.Ultimo)
@@ -120,7 +124,10 @@ namespace Capa_GUI
 
         private void PantallaRegistroMedico_Load(object sender, EventArgs e)
         {
-
+            this.Posicion = 0;
+            this.mostrar();
+            this.deshabilitar();
+            this.txtPosicion.Enabled = false;
         }
 
         private void btnRegistrar_Click(object sender, EventArgs e)
@@ -324,7 +331,34 @@ namespace Capa_GUI
             }
         } //Fin eliminar
 
+        private void btnListar_Click(object sender, EventArgs e)
+        {
+            PantallaListarMedico pListarMedico = new PantallaListarMedico();
+            pListarMedico.ShowDialog();
+        }
 
-    
+        private void btnPrimero_Click(object sender, EventArgs e)
+        {
+            Posicion = 0;
+            mostrar();
+        }
+
+        private void btnAnterior_Click(object sender, EventArgs e)
+        {
+            this.Posicion = this.Posicion - 1;
+            mostrar();
+        }
+
+        private void btnSiguiente_Click(object sender, EventArgs e)
+        {
+            this.Posicion = this.Posicion + 1;
+            mostrar();
+        }
+
+        private void btnUltimo_Click(object sender, EventArgs e)
+        {
+            this.Posicion = this.Ultimo;
+            mostrar();
+        }
     }
 }

@@ -70,6 +70,12 @@
     <Compile Include="PantallaHome.Designer.cs">
       <DependentUpon>PantallaHome.cs</DependentUpon>
     </Compile>
+    <Compile Include="PantallaListarMedico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaListarMedico.Designer.cs">
+      <DependentUpon>PantallaListarMedico.cs</DependentUpon>
+    </Compile>
     <Compile Include="PantallaListarTutor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,6 +143,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PantallaHome.resx">
       <DependentUpon>PantallaHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaListarMedico.resx">
+      <DependentUpon>PantallaListarMedico.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PantallaListarTutor.resx">
       <DependentUpon>PantallaListarTutor.cs</DependentUpon>
