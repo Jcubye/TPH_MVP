@@ -285,13 +285,13 @@ namespace Capa_GUI
                         return;
                     }
 
-                    ServiceTutor.WebServiceTutorSoapClient auxServicio = new ServiceTutor.WebServiceTutorSoapClient();
+                    ServiceMedico.WebServiceMedicoCargoSoapClient auxServicio = new ServiceMedico.WebServiceMedicoCargoSoapClient();
 
                     //Se valida si el cliente existe
 
-                    if (String.IsNullOrEmpty(auxServicio.buscaTutorService(this.txtRut.Text).Rut))
+                    if (String.IsNullOrEmpty(auxServicio.buscaMedicoService(this.txtRut.Text).Rut))
                     {
-                        MessageBox.Show("Tutor no Existe ", "System");
+                        MessageBox.Show("Medico no Existe ", "System");
                         this.txtRut.Focus();
                         return;
                     }
@@ -301,8 +301,8 @@ namespace Capa_GUI
          MessageBoxButtons.YesNo, MessageBoxIcon.Question)
          == DialogResult.Yes))
                     {
-                        auxServicio.eliminarTutorServce(this.txtRut.Text);
-                        MessageBox.Show("Tutor Eliminado ", "System");
+                        auxServicio.eliminarMedicoService(this.txtRut.Text);
+                        MessageBox.Show("Medico Eliminado ", "System");
 
                         //Volver la pantalla
                         this.btnRegistrar.Enabled = true;
