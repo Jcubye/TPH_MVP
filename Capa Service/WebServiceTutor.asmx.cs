@@ -33,7 +33,6 @@ namespace Capa_Service
         {
             NegocioTutor auxNegocio = new NegocioTutor();
             auxNegocio.actualizarTutor(tutor);
-
         }
 
         [WebMethod]
@@ -63,7 +62,5 @@ namespace Capa_Service
             NegocioTutor auxNegocio = new NegocioTutor();
             return auxNegocio.posicionTutor(fila);
         }
-
-
     }
 }

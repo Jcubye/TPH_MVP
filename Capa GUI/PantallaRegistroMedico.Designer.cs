@@ -30,15 +30,15 @@ namespace Capa_GUI
         private void InitializeComponent()
         {
             this.txtPosicion = new System.Windows.Forms.TextBox();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.txtAnterior = new System.Windows.Forms.Button();
-            this.txtPrimero = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.txtListar = new System.Windows.Forms.Button();
-            this.txtEliminar = new System.Windows.Forms.Button();
-            this.txtModificar = new System.Windows.Forms.Button();
-            this.txtRegistrar = new System.Windows.Forms.Button();
+            this.btnUltimo = new System.Windows.Forms.Button();
+            this.btnSiguiente = new System.Windows.Forms.Button();
+            this.btnAnterior = new System.Windows.Forms.Button();
+            this.btnPrimero = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.btnListar = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnModificar = new System.Windows.Forms.Button();
+            this.btnRegistrar = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.txtApellido = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -58,88 +58,92 @@ namespace Capa_GUI
             this.txtPosicion.Name = "txtPosicion";
             this.txtPosicion.Size = new System.Drawing.Size(75, 22);
             this.txtPosicion.TabIndex = 57;
+            this.txtPosicion.TextChanged += new System.EventHandler(this.txtPosicion_TextChanged);
             // 
-            // button9
+            // btnUltimo
             // 
-            this.button9.Location = new System.Drawing.Point(555, 326);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(75, 23);
-            this.button9.TabIndex = 56;
-            this.button9.Text = ">>";
-            this.button9.UseVisualStyleBackColor = true;
+            this.btnUltimo.Location = new System.Drawing.Point(555, 326);
+            this.btnUltimo.Name = "btnUltimo";
+            this.btnUltimo.Size = new System.Drawing.Size(75, 23);
+            this.btnUltimo.TabIndex = 56;
+            this.btnUltimo.Text = ">>";
+            this.btnUltimo.UseVisualStyleBackColor = true;
             // 
-            // button8
+            // btnSiguiente
             // 
-            this.button8.Location = new System.Drawing.Point(464, 326);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 23);
-            this.button8.TabIndex = 55;
-            this.button8.Text = ">";
-            this.button8.UseVisualStyleBackColor = true;
+            this.btnSiguiente.Location = new System.Drawing.Point(464, 326);
+            this.btnSiguiente.Name = "btnSiguiente";
+            this.btnSiguiente.Size = new System.Drawing.Size(75, 23);
+            this.btnSiguiente.TabIndex = 55;
+            this.btnSiguiente.Text = ">";
+            this.btnSiguiente.UseVisualStyleBackColor = true;
             // 
-            // txtAnterior
+            // btnAnterior
             // 
-            this.txtAnterior.Location = new System.Drawing.Point(278, 326);
-            this.txtAnterior.Name = "txtAnterior";
-            this.txtAnterior.Size = new System.Drawing.Size(75, 23);
-            this.txtAnterior.TabIndex = 54;
-            this.txtAnterior.Text = "<";
-            this.txtAnterior.UseVisualStyleBackColor = true;
+            this.btnAnterior.Location = new System.Drawing.Point(278, 326);
+            this.btnAnterior.Name = "btnAnterior";
+            this.btnAnterior.Size = new System.Drawing.Size(75, 23);
+            this.btnAnterior.TabIndex = 54;
+            this.btnAnterior.Text = "<";
+            this.btnAnterior.UseVisualStyleBackColor = true;
             // 
-            // txtPrimero
+            // btnPrimero
             // 
-            this.txtPrimero.Location = new System.Drawing.Point(181, 326);
-            this.txtPrimero.Name = "txtPrimero";
-            this.txtPrimero.Size = new System.Drawing.Size(75, 23);
-            this.txtPrimero.TabIndex = 53;
-            this.txtPrimero.Text = "<<";
-            this.txtPrimero.UseVisualStyleBackColor = true;
+            this.btnPrimero.Location = new System.Drawing.Point(181, 326);
+            this.btnPrimero.Name = "btnPrimero";
+            this.btnPrimero.Size = new System.Drawing.Size(75, 23);
+            this.btnPrimero.TabIndex = 53;
+            this.btnPrimero.Text = "<<";
+            this.btnPrimero.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // btnSalir
             // 
-            this.button5.Location = new System.Drawing.Point(555, 297);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 52;
-            this.button5.Text = "Salir";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.btnSalir.Location = new System.Drawing.Point(555, 297);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(75, 23);
+            this.btnSalir.TabIndex = 52;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.button5_Click);
             // 
-            // txtListar
+            // btnListar
             // 
-            this.txtListar.Location = new System.Drawing.Point(464, 297);
-            this.txtListar.Name = "txtListar";
-            this.txtListar.Size = new System.Drawing.Size(75, 23);
-            this.txtListar.TabIndex = 51;
-            this.txtListar.Text = "Listar";
-            this.txtListar.UseVisualStyleBackColor = true;
+            this.btnListar.Location = new System.Drawing.Point(464, 297);
+            this.btnListar.Name = "btnListar";
+            this.btnListar.Size = new System.Drawing.Size(75, 23);
+            this.btnListar.TabIndex = 51;
+            this.btnListar.Text = "Listar";
+            this.btnListar.UseVisualStyleBackColor = true;
             // 
-            // txtEliminar
+            // btnEliminar
             // 
-            this.txtEliminar.Location = new System.Drawing.Point(372, 297);
-            this.txtEliminar.Name = "txtEliminar";
-            this.txtEliminar.Size = new System.Drawing.Size(75, 23);
-            this.txtEliminar.TabIndex = 50;
-            this.txtEliminar.Text = "Actualizar";
-            this.txtEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Location = new System.Drawing.Point(372, 297);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(75, 23);
+            this.btnEliminar.TabIndex = 50;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
-            // txtModificar
+            // btnModificar
             // 
-            this.txtModificar.Location = new System.Drawing.Point(278, 297);
-            this.txtModificar.Name = "txtModificar";
-            this.txtModificar.Size = new System.Drawing.Size(75, 23);
-            this.txtModificar.TabIndex = 49;
-            this.txtModificar.Text = "Modificar";
-            this.txtModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Location = new System.Drawing.Point(278, 297);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(75, 23);
+            this.btnModificar.TabIndex = 49;
+            this.btnModificar.Text = "Modificar";
+            this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
-            // txtRegistrar
+            // btnRegistrar
             // 
-            this.txtRegistrar.Location = new System.Drawing.Point(181, 297);
-            this.txtRegistrar.Name = "txtRegistrar";
-            this.txtRegistrar.Size = new System.Drawing.Size(75, 23);
-            this.txtRegistrar.TabIndex = 48;
-            this.txtRegistrar.Text = "Registrar";
-            this.txtRegistrar.UseVisualStyleBackColor = true;
+            this.btnRegistrar.Location = new System.Drawing.Point(181, 297);
+            this.btnRegistrar.Name = "btnRegistrar";
+            this.btnRegistrar.Size = new System.Drawing.Size(75, 23);
+            this.btnRegistrar.TabIndex = 48;
+            this.btnRegistrar.Text = "Registrar";
+            this.btnRegistrar.UseVisualStyleBackColor = true;
+            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
             // label5
             // 
@@ -240,15 +244,15 @@ namespace Capa_GUI
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtEspecialidad);
             this.Controls.Add(this.txtPosicion);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.txtAnterior);
-            this.Controls.Add(this.txtPrimero);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.txtListar);
-            this.Controls.Add(this.txtEliminar);
-            this.Controls.Add(this.txtModificar);
-            this.Controls.Add(this.txtRegistrar);
+            this.Controls.Add(this.btnUltimo);
+            this.Controls.Add(this.btnSiguiente);
+            this.Controls.Add(this.btnAnterior);
+            this.Controls.Add(this.btnPrimero);
+            this.Controls.Add(this.btnSalir);
+            this.Controls.Add(this.btnListar);
+            this.Controls.Add(this.btnEliminar);
+            this.Controls.Add(this.btnModificar);
+            this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtApellido);
             this.Controls.Add(this.label4);
@@ -260,6 +264,7 @@ namespace Capa_GUI
             this.Controls.Add(this.label1);
             this.Name = "PantallaRegistroMedico";
             this.Text = "PantallaRegistroMedico";
+            this.Load += new System.EventHandler(this.PantallaRegistroMedico_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -268,15 +273,15 @@ namespace Capa_GUI
         #endregion
 
         private System.Windows.Forms.TextBox txtPosicion;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button txtAnterior;
-        private System.Windows.Forms.Button txtPrimero;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button txtListar;
-        private System.Windows.Forms.Button txtEliminar;
-        private System.Windows.Forms.Button txtModificar;
-        private System.Windows.Forms.Button txtRegistrar;
+        private System.Windows.Forms.Button btnUltimo;
+        private System.Windows.Forms.Button btnSiguiente;
+        private System.Windows.Forms.Button btnAnterior;
+        private System.Windows.Forms.Button btnPrimero;
+        private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.Button btnListar;
+        private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.Button btnModificar;
+        private System.Windows.Forms.Button btnRegistrar;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtApellido;
         private System.Windows.Forms.Label label4;
