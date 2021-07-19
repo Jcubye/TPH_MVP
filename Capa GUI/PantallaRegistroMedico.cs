@@ -75,6 +75,7 @@ namespace Capa_GUI
 
 
 
+
         public PantallaRegistroMedico()
         {
             InitializeComponent();

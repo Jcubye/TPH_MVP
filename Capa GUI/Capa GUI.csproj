@@ -80,6 +80,12 @@
     <Compile Include="PantallaHome.Designer.cs">
       <DependentUpon>PantallaHome.cs</DependentUpon>
     </Compile>
+    <Compile Include="PantallaListarPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaListarPaciente.Designer.cs">
+      <DependentUpon>PantallaListarPaciente.cs</DependentUpon>
+    </Compile>
     <Compile Include="PantallaListarUbicacion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -159,6 +165,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PantallaHome.resx">
       <DependentUpon>PantallaHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaListarPaciente.resx">
+      <DependentUpon>PantallaListarPaciente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PantallaListarUbicacion.resx">
       <DependentUpon>PantallaListarUbicacion.cs</DependentUpon>
