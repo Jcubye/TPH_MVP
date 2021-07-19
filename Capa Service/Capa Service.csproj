@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="Web.config" />
     <Content Include="WebServiceMedicoCargo.asmx" />
+    <Content Include="WebServicePaciente.asmx" />
     <Content Include="WebServiceTutor.asmx" />
     <Content Include="WebServiceUbicacion.asmx" />
   </ItemGroup>
@@ -76,6 +77,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WebServiceMedicoCargo.asmx.cs">
       <DependentUpon>WebServiceMedicoCargo.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WebServicePaciente.asmx.cs">
+      <DependentUpon>WebServicePaciente.asmx</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="WebServiceTutor.asmx.cs">

@@ -53,6 +53,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Connected Services\ServicePaciente\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Connected Services\ServiceTutor\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -204,6 +209,10 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\ServiceMedico\WebServiceMedicoCargo.wsdl" />
+    <None Include="Connected Services\ServicePaciente\Capa_GUI.ServicePaciente.Paciente.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServicePaciente\WebServicePaciente.wsdl" />
     <None Include="Connected Services\ServiceTutor\Capa_GUI.ServiceTutor.Tutor.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
@@ -231,6 +240,7 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\ServiceMedico\" />
+    <WCFMetadataStorage Include="Connected Services\ServicePaciente\" />
     <WCFMetadataStorage Include="Connected Services\ServiceTutor\" />
     <WCFMetadataStorage Include="Connected Services\ServiceUbicacion\" />
   </ItemGroup>
@@ -285,6 +295,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Connected Services\ServiceUbicacion\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServicePaciente\WebServicePaciente.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServicePaciente\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServicePaciente\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServicePaciente\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
