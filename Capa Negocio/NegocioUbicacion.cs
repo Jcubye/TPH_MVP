@@ -112,8 +112,8 @@ namespace Capa_Negocio
             try
             {
                 auxUbicacion.Id = (int)dt.Rows[fila]["id"];
-                auxUbicacion.Area = (String)dt.Rows[fila]["rut"];
-                auxUbicacion.Camas = (int)dt.Rows[fila]["clave"];
+                auxUbicacion.Area = (String)dt.Rows[fila]["area"];
+                auxUbicacion.Camas = (int)dt.Rows[fila]["camas"];
             }
             catch
             {
