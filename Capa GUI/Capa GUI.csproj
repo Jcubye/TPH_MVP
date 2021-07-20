@@ -48,6 +48,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Connected Services\ServiceAtencion\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\ServiceIngreso\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Connected Services\ServiceMedico\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -79,6 +89,18 @@
     </Compile>
     <Compile Include="PantallaHome.Designer.cs">
       <DependentUpon>PantallaHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PantallaListarAtencion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaListarAtencion.Designer.cs">
+      <DependentUpon>PantallaListarAtencion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PantallaListarIngresos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaListarIngresos.Designer.cs">
+      <DependentUpon>PantallaListarIngresos.cs</DependentUpon>
     </Compile>
     <Compile Include="PantallaListarPaciente.cs">
       <SubType>Form</SubType>
@@ -121,6 +143,12 @@
     </Compile>
     <Compile Include="PantallaRegistroAtencion.Designer.cs">
       <DependentUpon>PantallaRegistroAtencion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PantallaRegistroIngreso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaRegistroIngreso.Designer.cs">
+      <DependentUpon>PantallaRegistroIngreso.cs</DependentUpon>
     </Compile>
     <Compile Include="PantallaRegistroUbicacion.cs">
       <SubType>Form</SubType>
@@ -166,6 +194,12 @@
     <EmbeddedResource Include="PantallaHome.resx">
       <DependentUpon>PantallaHome.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PantallaListarAtencion.resx">
+      <DependentUpon>PantallaListarAtencion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaListarIngresos.resx">
+      <DependentUpon>PantallaListarIngresos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PantallaListarPaciente.resx">
       <DependentUpon>PantallaListarPaciente.cs</DependentUpon>
     </EmbeddedResource>
@@ -186,6 +220,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PantallaRegistroAtencion.resx">
       <DependentUpon>PantallaRegistroAtencion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaRegistroIngreso.resx">
+      <DependentUpon>PantallaRegistroIngreso.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PantallaRegistroUbicacion.resx">
       <DependentUpon>PantallaRegistroUbicacion.cs</DependentUpon>
@@ -214,6 +251,14 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="Connected Services\ServiceAtencion\Capa_GUI.ServiceAtencion.Atencion.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceAtencion\WebServiceAtencion.wsdl" />
+    <None Include="Connected Services\ServiceIngreso\Capa_GUI.ServiceIngreso.Ingreso.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIngreso\WebServiceIngreso.wsdl" />
     <None Include="Connected Services\ServiceMedico\Capa_GUI.ServiceMedico.Medico_cargo.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
@@ -248,6 +293,8 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\ServiceAtencion\" />
+    <WCFMetadataStorage Include="Connected Services\ServiceIngreso\" />
     <WCFMetadataStorage Include="Connected Services\ServiceMedico\" />
     <WCFMetadataStorage Include="Connected Services\ServicePaciente\" />
     <WCFMetadataStorage Include="Connected Services\ServiceTutor\" />
@@ -319,6 +366,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Connected Services\ServicePaciente\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceAtencion\WebServiceAtencion.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceAtencion\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceAtencion\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceAtencion\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceIngreso\WebServiceIngreso.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceIngreso\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceIngreso\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceIngreso\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>

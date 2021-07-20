@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="insertarAtencionService">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="atencion" type="tns:Atencion" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Atencion">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Fecha" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="Detalle" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Ingreso_id" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="insertarAtencionServiceResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="actualizarAtencionService">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="atencion" type="tns:Atencion" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="actualizarAtencionServiceResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="eliminarAtencionService">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="eliminarAtencionServiceResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="consultarAtencionService">
+        <s:complexType />
+      </s:element>
+      <s:element name="consultarAtencionServiceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="consultarAtencionServiceResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="buscaAtencionService">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="buscaAtencionServiceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="buscaAtencionServiceResult" type="tns:Atencion" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="posicionAtencionService">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="fila" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="posicionAtencionServiceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="posicionAtencionServiceResult" type="tns:Atencion" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="insertarAtencionServiceSoapIn">
+    <wsdl:part name="parameters" element="tns:insertarAtencionService" />
+  </wsdl:message>
+  <wsdl:message name="insertarAtencionServiceSoapOut">
+    <wsdl:part name="parameters" element="tns:insertarAtencionServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="actualizarAtencionServiceSoapIn">
+    <wsdl:part name="parameters" element="tns:actualizarAtencionService" />
+  </wsdl:message>
+  <wsdl:message name="actualizarAtencionServiceSoapOut">
+    <wsdl:part name="parameters" element="tns:actualizarAtencionServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="eliminarAtencionServiceSoapIn">
+    <wsdl:part name="parameters" element="tns:eliminarAtencionService" />
+  </wsdl:message>
+  <wsdl:message name="eliminarAtencionServiceSoapOut">
+    <wsdl:part name="parameters" element="tns:eliminarAtencionServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="consultarAtencionServiceSoapIn">
+    <wsdl:part name="parameters" element="tns:consultarAtencionService" />
+  </wsdl:message>
+  <wsdl:message name="consultarAtencionServiceSoapOut">
+    <wsdl:part name="parameters" element="tns:consultarAtencionServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="buscaAtencionServiceSoapIn">
+    <wsdl:part name="parameters" element="tns:buscaAtencionService" />
+  </wsdl:message>
+  <wsdl:message name="buscaAtencionServiceSoapOut">
+    <wsdl:part name="parameters" element="tns:buscaAtencionServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="posicionAtencionServiceSoapIn">
+    <wsdl:part name="parameters" element="tns:posicionAtencionService" />
+  </wsdl:message>
+  <wsdl:message name="posicionAtencionServiceSoapOut">
+    <wsdl:part name="parameters" element="tns:posicionAtencionServiceResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WebServiceAtencionSoap">
+    <wsdl:operation name="insertarAtencionService">
+      <wsdl:input message="tns:insertarAtencionServiceSoapIn" />
+      <wsdl:output message="tns:insertarAtencionServiceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="actualizarAtencionService">
+      <wsdl:input message="tns:actualizarAtencionServiceSoapIn" />
+      <wsdl:output message="tns:actualizarAtencionServiceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="eliminarAtencionService">
+      <wsdl:input message="tns:eliminarAtencionServiceSoapIn" />
+      <wsdl:output message="tns:eliminarAtencionServiceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="consultarAtencionService">
+      <wsdl:input message="tns:consultarAtencionServiceSoapIn" />
+      <wsdl:output message="tns:consultarAtencionServiceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="buscaAtencionService">
+      <wsdl:input message="tns:buscaAtencionServiceSoapIn" />
+      <wsdl:output message="tns:buscaAtencionServiceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="posicionAtencionService">
+      <wsdl:input message="tns:posicionAtencionServiceSoapIn" />
+      <wsdl:output message="tns:posicionAtencionServiceSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebServiceAtencionSoap" type="tns:WebServiceAtencionSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="insertarAtencionService">
+      <soap:operation soapAction="http://tempuri.org/insertarAtencionService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="actualizarAtencionService">
+      <soap:operation soapAction="http://tempuri.org/actualizarAtencionService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="eliminarAtencionService">
+      <soap:operation soapAction="http://tempuri.org/eliminarAtencionService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarAtencionService">
+      <soap:operation soapAction="http://tempuri.org/consultarAtencionService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="buscaAtencionService">
+      <soap:operation soapAction="http://tempuri.org/buscaAtencionService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="posicionAtencionService">
+      <soap:operation soapAction="http://tempuri.org/posicionAtencionService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebServiceAtencionSoap12" type="tns:WebServiceAtencionSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="insertarAtencionService">
+      <soap12:operation soapAction="http://tempuri.org/insertarAtencionService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="actualizarAtencionService">
+      <soap12:operation soapAction="http://tempuri.org/actualizarAtencionService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="eliminarAtencionService">
+      <soap12:operation soapAction="http://tempuri.org/eliminarAtencionService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarAtencionService">
+      <soap12:operation soapAction="http://tempuri.org/consultarAtencionService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="buscaAtencionService">
+      <soap12:operation soapAction="http://tempuri.org/buscaAtencionService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="posicionAtencionService">
+      <soap12:operation soapAction="http://tempuri.org/posicionAtencionService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebServiceAtencion">
+    <wsdl:port name="WebServiceAtencionSoap" binding="tns:WebServiceAtencionSoap">
+      <soap:address location="https://localhost:44300/WebServiceAtencion.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebServiceAtencionSoap12" binding="tns:WebServiceAtencionSoap12">
+      <soap12:address location="https://localhost:44300/WebServiceAtencion.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

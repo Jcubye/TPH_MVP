@@ -32,3 +32,6 @@ C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Pacient
 C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa GUI\obj\Debug\Capa_GUI.PantallaListarUbicacion.resources
 C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa GUI\obj\Debug\Capa_GUI.PantallaRegistroUbicacion.resources
 C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa GUI\obj\Debug\Capa_GUI.PantallaListarPaciente.resources
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa GUI\obj\Debug\Capa_GUI.PantallaListarAtencion.resources
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa GUI\obj\Debug\Capa_GUI.PantallaListarIngresos.resources
+C:\Users\Jcubye\Desktop\Integración de Plataformas\TPH_PMV\Trazabilidad Paciente Hospitalizado\Capa GUI\obj\Debug\Capa_GUI.PantallaRegistroIngreso.resources

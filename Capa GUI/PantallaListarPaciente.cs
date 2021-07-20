@@ -16,5 +16,18 @@ namespace Capa_GUI
         {
             InitializeComponent();
         }
+
+        private void btnMostrar_Click(object sender, EventArgs e)
+        {
+            ServicePaciente.WebServicePacienteSoapClient auxPacienteService = new ServicePaciente.WebServicePacienteSoapClient();
+            this.DataGridViewTutor.DataSource = auxPacienteService.consultarPacienteService();
+            this.DataGridViewTutor.DataMember = "paciente";
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+            System.GC.Collect();
+        }
     }
 }

@@ -46,6 +46,7 @@ namespace Capa_GUI
             this.txtTotalPacientes = new System.Windows.Forms.TextBox();
             this.txtTotalCamas = new System.Windows.Forms.TextBox();
             this.txtTotalCamasDisponibles = new System.Windows.Forms.TextBox();
+            this.registroIngresoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,19 +56,20 @@ namespace Capa_GUI
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.resumenToolStripMenuItem,
             this.registroUsuariosToolStripMenuItem,
+            this.registroIngresoToolStripMenuItem,
             this.registroAtenciónToolStripMenuItem,
             this.registroDepartamentosToolStripMenuItem,
             this.salirToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(800, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // resumenToolStripMenuItem
             // 
             this.resumenToolStripMenuItem.Name = "resumenToolStripMenuItem";
-            this.resumenToolStripMenuItem.Size = new System.Drawing.Size(83, 26);
+            this.resumenToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
             this.resumenToolStripMenuItem.Text = "Resumen";
             // 
             // registroUsuariosToolStripMenuItem
@@ -77,7 +79,7 @@ namespace Capa_GUI
             this.registroTutorToolStripMenuItem,
             this.registroMédicoToolStripMenuItem});
             this.registroUsuariosToolStripMenuItem.Name = "registroUsuariosToolStripMenuItem";
-            this.registroUsuariosToolStripMenuItem.Size = new System.Drawing.Size(138, 26);
+            this.registroUsuariosToolStripMenuItem.Size = new System.Drawing.Size(138, 24);
             this.registroUsuariosToolStripMenuItem.Text = "Registro Usuarios";
             // 
             // registroPacienteToolStripMenuItem
@@ -104,21 +106,21 @@ namespace Capa_GUI
             // registroAtenciónToolStripMenuItem
             // 
             this.registroAtenciónToolStripMenuItem.Name = "registroAtenciónToolStripMenuItem";
-            this.registroAtenciónToolStripMenuItem.Size = new System.Drawing.Size(141, 26);
+            this.registroAtenciónToolStripMenuItem.Size = new System.Drawing.Size(141, 24);
             this.registroAtenciónToolStripMenuItem.Text = "Registro Atención";
             this.registroAtenciónToolStripMenuItem.Click += new System.EventHandler(this.registroAtenciónToolStripMenuItem_Click);
             // 
             // registroDepartamentosToolStripMenuItem
             // 
             this.registroDepartamentosToolStripMenuItem.Name = "registroDepartamentosToolStripMenuItem";
-            this.registroDepartamentosToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
+            this.registroDepartamentosToolStripMenuItem.Size = new System.Drawing.Size(185, 24);
             this.registroDepartamentosToolStripMenuItem.Text = "Registro Departamentos";
             this.registroDepartamentosToolStripMenuItem.Click += new System.EventHandler(this.registroDepartamentosToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(52, 26);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(52, 24);
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
@@ -190,6 +192,13 @@ namespace Capa_GUI
             this.txtTotalCamasDisponibles.Size = new System.Drawing.Size(100, 22);
             this.txtTotalCamasDisponibles.TabIndex = 8;
             // 
+            // registroIngresoToolStripMenuItem
+            // 
+            this.registroIngresoToolStripMenuItem.Name = "registroIngresoToolStripMenuItem";
+            this.registroIngresoToolStripMenuItem.Size = new System.Drawing.Size(131, 24);
+            this.registroIngresoToolStripMenuItem.Text = "Registro Ingreso";
+            this.registroIngresoToolStripMenuItem.Click += new System.EventHandler(this.registroIngresoToolStripMenuItem_Click);
+            // 
             // PantallaAdministrador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -233,5 +242,6 @@ namespace Capa_GUI
         private System.Windows.Forms.TextBox txtTotalPacientes;
         private System.Windows.Forms.TextBox txtTotalCamas;
         private System.Windows.Forms.TextBox txtTotalCamasDisponibles;
+        private System.Windows.Forms.ToolStripMenuItem registroIngresoToolStripMenuItem;
     }
 }

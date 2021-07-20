@@ -43,6 +43,7 @@ namespace Capa_GUI
             this.btnSalir.TabIndex = 11;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // btnMostrar
             // 
@@ -52,6 +53,7 @@ namespace Capa_GUI
             this.btnMostrar.TabIndex = 10;
             this.btnMostrar.Text = "Mostrar";
             this.btnMostrar.UseVisualStyleBackColor = true;
+            this.btnMostrar.Click += new System.EventHandler(this.btnMostrar_Click);
             // 
             // DataGridViewTutor
             // 

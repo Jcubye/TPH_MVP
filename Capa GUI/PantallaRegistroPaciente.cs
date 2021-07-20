@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static Capa_Conexion.Clase_Conexion;
 
 namespace Capa_GUI
 {
@@ -61,6 +63,7 @@ namespace Capa_GUI
             this.txtEpicrisis.Text = "";
             this.txtTelefono.Text = "";
             this.txtTutor.Text = "";
+            this.txtUbicacion.Text = "";
         }
 
         public void habilitar()
@@ -74,6 +77,7 @@ namespace Capa_GUI
             this.txtEpicrisis.Enabled = true;
             this.txtTelefono.Enabled = true;
             this.txtTutor.Enabled = true;
+            this.txtUbicacion.Enabled = true;
         }
 
         public void deshabilitar()
@@ -87,6 +91,7 @@ namespace Capa_GUI
             this.txtEpicrisis.Enabled = false;
             this.txtTelefono.Enabled = false;
             this.txtTutor.Enabled = false;
+            this.txtUbicacion.Enabled = false;
         }
 
         public PantallaRegistroPaciente()
@@ -112,12 +117,49 @@ namespace Capa_GUI
 
         private void button6_Click(object sender, EventArgs e)
         {
-            this.Dispose();
-            System.GC.Collect();
+            if (this.btnSalir.Text == "Salir")
+            {
+                this.Dispose();
+                System.GC.Collect();
+            }
+            else
+            {
+                if (this.btnRegistrar.Text.Equals("Nuevo"))
+                {
+                    this.btnRegistrar.Text = "Registrar";
+                }
+                if (this.btnModificar.Text.Equals("Actualizar"))
+                {
+                    this.btnModificar.Text = "Modificar";
+                }
+                if (this.btnEliminar.Text.Equals("Confirmar"))
+                {
+                    this.btnEliminar.Text = "Eliminar";
+                }
+                this.deshabilitar();
+                this.mostrar();
+                this.btnRegistrar.Enabled = true;
+                this.btnModificar.Enabled = true;
+                this.btnEliminar.Enabled = true;
+                this.btnListar.Enabled = true;
+                this.btnSalir.Text = "Salir";
+                //this.mostrar();
+            }
         }
 
         private void PantallaRegistroPaciente_Load(object sender, EventArgs e)
         {
+            //ConexionSQLSERVER conexion = new ConexionSQLSERVER();
+
+            //SqlCommand comando = new SqlCommand("SELECT id from tutor");
+            //conexion.abrir();
+            //SqlDataReader registro = comando.ExecuteReader();
+            //while(registro.Read())
+            //{
+            //    this.txtTutor.Items.Add(registro["id"].ToString());
+            //}
+            //conexion.cerrar();
+            
             this.Posicion = 0;
             this.mostrar();
             this.deshabilitar();
@@ -161,9 +203,9 @@ namespace Capa_GUI
                     auxPaciente.Disponibilidad = this.txtDisponibilidad.Text;
                     auxPaciente.Epicrisis = this.txtEpicrisis.Text;
                     auxPaciente.Telefono = this.txtTelefono.Text;
-                    auxPaciente.Tutor_id = 0;
+                    auxPaciente.Tutor_id = Convert.ToInt32(this.txtTutor.Text);
                     auxPaciente.Tutor_nombre = this.txtTutor.Text;
-                    auxPaciente.Ubicacion_id = 0;
+                    auxPaciente.Ubicacion_id = Convert.ToInt32(this.txtUbicacion.Text);
 
                     if (String.IsNullOrEmpty(this.txtRut.Text)
                         )
@@ -344,6 +386,9 @@ namespace Capa_GUI
             pListarPaciente.ShowDialog();
         }
 
+        private void label10_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }

@@ -57,24 +57,28 @@ namespace Capa_GUI
             this.label15 = new System.Windows.Forms.Label();
             this.txtRut = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.txtTutor = new System.Windows.Forms.ComboBox();
             this.tutorBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tutorBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.txtDisponibilidad = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.ubicacionBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.txtTutor = new System.Windows.Forms.TextBox();
+            this.txtUbicacion = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.tutorBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tutorBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ubicacionBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // txtPosicion
             // 
-            this.txtPosicion.Location = new System.Drawing.Point(514, 674);
+            this.txtPosicion.Location = new System.Drawing.Point(512, 719);
             this.txtPosicion.Name = "txtPosicion";
             this.txtPosicion.Size = new System.Drawing.Size(75, 22);
             this.txtPosicion.TabIndex = 86;
             // 
             // btnUltimo
             // 
-            this.btnUltimo.Location = new System.Drawing.Point(697, 673);
+            this.btnUltimo.Location = new System.Drawing.Point(695, 718);
             this.btnUltimo.Name = "btnUltimo";
             this.btnUltimo.Size = new System.Drawing.Size(75, 23);
             this.btnUltimo.TabIndex = 85;
@@ -83,7 +87,7 @@ namespace Capa_GUI
             // 
             // btnSiguiente
             // 
-            this.btnSiguiente.Location = new System.Drawing.Point(606, 673);
+            this.btnSiguiente.Location = new System.Drawing.Point(604, 718);
             this.btnSiguiente.Name = "btnSiguiente";
             this.btnSiguiente.Size = new System.Drawing.Size(75, 23);
             this.btnSiguiente.TabIndex = 84;
@@ -92,7 +96,7 @@ namespace Capa_GUI
             // 
             // btnAnterior
             // 
-            this.btnAnterior.Location = new System.Drawing.Point(420, 673);
+            this.btnAnterior.Location = new System.Drawing.Point(418, 718);
             this.btnAnterior.Name = "btnAnterior";
             this.btnAnterior.Size = new System.Drawing.Size(75, 23);
             this.btnAnterior.TabIndex = 83;
@@ -101,7 +105,7 @@ namespace Capa_GUI
             // 
             // btnPrimero
             // 
-            this.btnPrimero.Location = new System.Drawing.Point(323, 673);
+            this.btnPrimero.Location = new System.Drawing.Point(321, 718);
             this.btnPrimero.Name = "btnPrimero";
             this.btnPrimero.Size = new System.Drawing.Size(75, 23);
             this.btnPrimero.TabIndex = 82;
@@ -110,7 +114,7 @@ namespace Capa_GUI
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(697, 644);
+            this.btnSalir.Location = new System.Drawing.Point(695, 689);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(75, 23);
             this.btnSalir.TabIndex = 81;
@@ -120,7 +124,7 @@ namespace Capa_GUI
             // 
             // btnListar
             // 
-            this.btnListar.Location = new System.Drawing.Point(606, 644);
+            this.btnListar.Location = new System.Drawing.Point(604, 689);
             this.btnListar.Name = "btnListar";
             this.btnListar.Size = new System.Drawing.Size(75, 23);
             this.btnListar.TabIndex = 80;
@@ -130,7 +134,7 @@ namespace Capa_GUI
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(514, 644);
+            this.btnEliminar.Location = new System.Drawing.Point(512, 689);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(75, 23);
             this.btnEliminar.TabIndex = 79;
@@ -140,7 +144,7 @@ namespace Capa_GUI
             // 
             // btnModificar
             // 
-            this.btnModificar.Location = new System.Drawing.Point(420, 644);
+            this.btnModificar.Location = new System.Drawing.Point(418, 689);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(75, 23);
             this.btnModificar.TabIndex = 78;
@@ -150,7 +154,7 @@ namespace Capa_GUI
             // 
             // btnRegistrar
             // 
-            this.btnRegistrar.Location = new System.Drawing.Point(323, 644);
+            this.btnRegistrar.Location = new System.Drawing.Point(321, 689);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(75, 23);
             this.btnRegistrar.TabIndex = 77;
@@ -163,9 +167,10 @@ namespace Capa_GUI
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(283, 578);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(100, 17);
+            this.label10.Size = new System.Drawing.Size(61, 17);
             this.label10.TabIndex = 76;
-            this.label10.Text = "Nombre Tutor:";
+            this.label10.Text = "Id Tutor:";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // label9
             // 
@@ -304,19 +309,6 @@ namespace Capa_GUI
             this.label16.TabIndex = 58;
             this.label16.Text = "Registro Paciente";
             // 
-            // txtTutor
-            // 
-            this.txtTutor.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.tutorBindingSource, "Nombre", true));
-            this.txtTutor.DataSource = this.tutorBindingSource1;
-            this.txtTutor.DisplayMember = "Nombre";
-            this.txtTutor.FormattingEnabled = true;
-            this.txtTutor.Location = new System.Drawing.Point(418, 575);
-            this.txtTutor.Name = "txtTutor";
-            this.txtTutor.Size = new System.Drawing.Size(121, 24);
-            this.txtTutor.TabIndex = 87;
-            this.txtTutor.ValueMember = "Nombre";
-            this.txtTutor.SelectedIndexChanged += new System.EventHandler(this.txtTutor_SelectedIndexChanged);
-            // 
             // tutorBindingSource
             // 
             this.tutorBindingSource.DataSource = typeof(Capa_GUI.ServiceTutor.Tutor);
@@ -336,13 +328,42 @@ namespace Capa_GUI
             this.txtDisponibilidad.Size = new System.Drawing.Size(176, 24);
             this.txtDisponibilidad.TabIndex = 88;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(285, 612);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(89, 17);
+            this.label1.TabIndex = 89;
+            this.label1.Text = "Id Ubicacion:";
+            // 
+            // ubicacionBindingSource
+            // 
+            this.ubicacionBindingSource.DataSource = typeof(Capa_GUI.ServiceUbicacion.Ubicacion);
+            // 
+            // txtTutor
+            // 
+            this.txtTutor.Location = new System.Drawing.Point(418, 575);
+            this.txtTutor.Name = "txtTutor";
+            this.txtTutor.Size = new System.Drawing.Size(100, 22);
+            this.txtTutor.TabIndex = 90;
+            // 
+            // txtUbicacion
+            // 
+            this.txtUbicacion.Location = new System.Drawing.Point(418, 603);
+            this.txtUbicacion.Name = "txtUbicacion";
+            this.txtUbicacion.Size = new System.Drawing.Size(100, 22);
+            this.txtUbicacion.TabIndex = 91;
+            // 
             // PantallaRegistroPaciente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(976, 783);
-            this.Controls.Add(this.txtDisponibilidad);
+            this.Controls.Add(this.txtUbicacion);
             this.Controls.Add(this.txtTutor);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtDisponibilidad);
             this.Controls.Add(this.txtPosicion);
             this.Controls.Add(this.btnUltimo);
             this.Controls.Add(this.btnSiguiente);
@@ -375,6 +396,7 @@ namespace Capa_GUI
             this.Load += new System.EventHandler(this.PantallaRegistroPaciente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tutorBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tutorBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ubicacionBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -409,9 +431,12 @@ namespace Capa_GUI
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox txtRut;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.ComboBox txtTutor;
         private System.Windows.Forms.BindingSource tutorBindingSource;
         private System.Windows.Forms.BindingSource tutorBindingSource1;
         private System.Windows.Forms.ComboBox txtDisponibilidad;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.BindingSource ubicacionBindingSource;
+        private System.Windows.Forms.TextBox txtTutor;
+        private System.Windows.Forms.TextBox txtUbicacion;
     }
 }

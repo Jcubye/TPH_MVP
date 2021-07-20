@@ -52,5 +52,11 @@ namespace Capa_GUI
             PantallaRegistroUbicacion pRegistroDepartamento = new PantallaRegistroUbicacion();
             pRegistroDepartamento.ShowDialog();
         }
+
+        private void registroIngresoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PantallaRegistroIngreso pRegistroIngreso = new PantallaRegistroIngreso();
+            pRegistroIngreso.ShowDialog();
+        }
     }
 }
